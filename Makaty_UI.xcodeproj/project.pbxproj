@@ -21,6 +21,14 @@
 		4976F4F02939D4830061C781 /* HistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F4EF2939D4830061C781 /* HistoryScreen.swift */; };
 		4976F4F32939D7C80061C781 /* PointFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F4F22939D7C80061C781 /* PointFilterViewModel.swift */; };
 		4976F4F52939E7520061C781 /* PointViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F4F42939E7520061C781 /* PointViewModel.swift */; };
+		4976F4F92939F35C0061C781 /* CardScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F4F82939F35C0061C781 /* CardScreen.swift */; };
+		4976F5012939FE430061C781 /* SideMenuScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F5002939FE430061C781 /* SideMenuScreen.swift */; };
+		4976F507293A14A50061C781 /* LinkLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F506293A14A50061C781 /* LinkLabel.swift */; };
+		4976F509293A163A0061C781 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F508293A163A0061C781 /* SideMenuViewModel.swift */; };
+		4976F50B293A28910061C781 /* RouterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F50A293A28910061C781 /* RouterViewModel.swift */; };
+		4976F50D293A29290061C781 /* RouterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F50C293A29290061C781 /* RouterScreen.swift */; };
+		4976F50F293A30F80061C781 /* CustomToolBarContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F50E293A30F80061C781 /* CustomToolBarContent.swift */; };
+		4976F51B293A3A2F0061C781 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F51A293A3A2F0061C781 /* ProfileScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +47,14 @@
 		4976F4EF2939D4830061C781 /* HistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreen.swift; sourceTree = "<group>"; };
 		4976F4F22939D7C80061C781 /* PointFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointFilterViewModel.swift; sourceTree = "<group>"; };
 		4976F4F42939E7520061C781 /* PointViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointViewModel.swift; sourceTree = "<group>"; };
+		4976F4F82939F35C0061C781 /* CardScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardScreen.swift; sourceTree = "<group>"; };
+		4976F5002939FE430061C781 /* SideMenuScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuScreen.swift; sourceTree = "<group>"; };
+		4976F506293A14A50061C781 /* LinkLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkLabel.swift; sourceTree = "<group>"; };
+		4976F508293A163A0061C781 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
+		4976F50A293A28910061C781 /* RouterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterViewModel.swift; sourceTree = "<group>"; };
+		4976F50C293A29290061C781 /* RouterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterScreen.swift; sourceTree = "<group>"; };
+		4976F50E293A30F80061C781 /* CustomToolBarContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToolBarContent.swift; sourceTree = "<group>"; };
+		4976F51A293A3A2F0061C781 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,11 +87,12 @@
 		4976F4C42938C8880061C781 /* Makaty_UI */ = {
 			isa = PBXGroup;
 			children = (
+				4976F4C72938C8880061C781 /* ContentView.swift */,
+				4976F4C52938C8880061C781 /* Makaty_UIApp.swift */,
 				4976F4D32938CD420061C781 /* Core */,
+				4976F4FA2939F4430061C781 /* Utils */,
 				4976F4D92938CDCE0061C781 /* Ressources */,
 				4976F4D82938CDC10061C781 /* Extensions */,
-				4976F4C52938C8880061C781 /* Makaty_UIApp.swift */,
-				4976F4C72938C8880061C781 /* ContentView.swift */,
 				4976F4C92938C88A0061C781 /* Assets.xcassets */,
 				4976F4CB2938C88A0061C781 /* Preview Content */,
 			);
@@ -93,9 +110,8 @@
 		4976F4D32938CD420061C781 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				4976F4D62938CD980061C781 /* Components */,
 				4976F4EB2939CDB20061C781 /* Models */,
-				4976F4D72938CDB50061C781 /* Router */,
+				4976F4D62938CD980061C781 /* Components */,
 				4976F4D52938CD8F0061C781 /* Screens */,
 			);
 			path = Core;
@@ -104,8 +120,12 @@
 		4976F4D52938CD8F0061C781 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				4976F4DF2938DE250061C781 /* MyPoints */,
 				4976F4DA2938CF080061C781 /* SplashScreen */,
+				4976F4D72938CDB50061C781 /* Router */,
+				4976F4FF2939FE280061C781 /* SideBarMenu */,
+				4976F4DF2938DE250061C781 /* Points */,
+				4976F4F62939F33F0061C781 /* Card */,
+				4976F515293A39950061C781 /* Profile */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -113,6 +133,8 @@
 		4976F4D62938CD980061C781 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4976F5022939FF530061C781 /* Router */,
+				4976F4FC2939F7B60061C781 /* ToolBar */,
 				4976F4E62938EF460061C781 /* Points */,
 				4976F4E32938E0E00061C781 /* Buttons */,
 			);
@@ -122,6 +144,8 @@
 		4976F4D72938CDB50061C781 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				4976F514293A35FA0061C781 /* ViewModels */,
+				4976F513293A35F20061C781 /* Views */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -149,13 +173,13 @@
 			path = SplashScreen;
 			sourceTree = "<group>";
 		};
-		4976F4DF2938DE250061C781 /* MyPoints */ = {
+		4976F4DF2938DE250061C781 /* Points */ = {
 			isa = PBXGroup;
 			children = (
 				4976F4F12939D77C0061C781 /* ViewModels */,
 				4976F4E02938DE770061C781 /* Views */,
 			);
-			path = MyPoints;
+			path = Points;
 			sourceTree = "<group>";
 		};
 		4976F4E02938DE770061C781 /* Views */ = {
@@ -205,6 +229,118 @@
 			children = (
 				4976F4F22939D7C80061C781 /* PointFilterViewModel.swift */,
 				4976F4F42939E7520061C781 /* PointViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4976F4F62939F33F0061C781 /* Card */ = {
+			isa = PBXGroup;
+			children = (
+				4976F4F72939F3480061C781 /* Views */,
+			);
+			path = Card;
+			sourceTree = "<group>";
+		};
+		4976F4F72939F3480061C781 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4976F4F82939F35C0061C781 /* CardScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4976F4FA2939F4430061C781 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				4976F4FB2939F4510061C781 /* Constant */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		4976F4FB2939F4510061C781 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		4976F4FC2939F7B60061C781 /* ToolBar */ = {
+			isa = PBXGroup;
+			children = (
+				4976F50E293A30F80061C781 /* CustomToolBarContent.swift */,
+			);
+			path = ToolBar;
+			sourceTree = "<group>";
+		};
+		4976F4FF2939FE280061C781 /* SideBarMenu */ = {
+			isa = PBXGroup;
+			children = (
+				4976F517293A39CC0061C781 /* ViewModels */,
+				4976F516293A39C80061C781 /* Views */,
+			);
+			path = SideBarMenu;
+			sourceTree = "<group>";
+		};
+		4976F5022939FF530061C781 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				4976F506293A14A50061C781 /* LinkLabel.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		4976F513293A35F20061C781 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4976F50C293A29290061C781 /* RouterScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4976F514293A35FA0061C781 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4976F50A293A28910061C781 /* RouterViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4976F515293A39950061C781 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				4976F519293A3A1F0061C781 /* ViewModels */,
+				4976F518293A3A160061C781 /* Views */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		4976F516293A39C80061C781 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4976F5002939FE430061C781 /* SideMenuScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4976F517293A39CC0061C781 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4976F508293A163A0061C781 /* SideMenuViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4976F518293A3A160061C781 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4976F51A293A3A2F0061C781 /* ProfileScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4976F519293A3A1F0061C781 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -283,12 +419,20 @@
 				4976F4F52939E7520061C781 /* PointViewModel.swift in Sources */,
 				4976F4DE2938D2390061C781 /* LaunchScreenWithAnim.swift in Sources */,
 				4976F4E52938E1150061C781 /* LargeButton.swift in Sources */,
+				4976F51B293A3A2F0061C781 /* ProfileScreen.swift in Sources */,
 				4976F4C82938C8880061C781 /* ContentView.swift in Sources */,
+				4976F507293A14A50061C781 /* LinkLabel.swift in Sources */,
 				4976F4F32939D7C80061C781 /* PointFilterViewModel.swift in Sources */,
+				4976F5012939FE430061C781 /* SideMenuScreen.swift in Sources */,
+				4976F50D293A29290061C781 /* RouterScreen.swift in Sources */,
+				4976F509293A163A0061C781 /* SideMenuViewModel.swift in Sources */,
+				4976F4F92939F35C0061C781 /* CardScreen.swift in Sources */,
 				4976F4EA2938F2410061C781 /* CustomLabel.swift in Sources */,
 				4976F4F02939D4830061C781 /* HistoryScreen.swift in Sources */,
 				4976F4E22938DE970061C781 /* PointScreen.swift in Sources */,
 				4976F4E82938EF5B0061C781 /* PointViewRow.swift in Sources */,
+				4976F50F293A30F80061C781 /* CustomToolBarContent.swift in Sources */,
+				4976F50B293A28910061C781 /* RouterViewModel.swift in Sources */,
 				4976F4EE2939CDE10061C781 /* PointModel.swift in Sources */,
 				4976F4C62938C8880061C781 /* Makaty_UIApp.swift in Sources */,
 			);

@@ -10,6 +10,7 @@ import SwiftUI
 struct PointScreen: View {
     
     @StateObject var pointViewModel = PointViewModel()
+    @EnvironmentObject var viewRouter : ViewRoutterViewModel
     
     var body: some View {
         NavigationStack {
@@ -74,19 +75,16 @@ struct PointScreen: View {
                     LargeButton(label: "Voir le offres MAKATY")
                 }
             }
+            .navigationBarBackButtonHidden(true)
             .padding(.top, 40)
             .padding(.bottom, 10)
             .toolbar {
-                ToolbarItem(placement: .navigationBarLeading) {
-                    Text("MAKATY")
-                        .font(.custom("HelveticaNeue-Bold", size: 22))
-                }
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    HStack {
-                        Image(systemName: "menucard")
+                CustomToolBarContent(title: "MAKATY") {
+                    withAnimation {
+                        viewRouter.showMenu = true
                     }
                 }
-        }
+            }
         }
     }
 }
@@ -94,5 +92,6 @@ struct PointScreen: View {
 struct PointScreen_Previews: PreviewProvider {
     static var previews: some View {
         PointScreen()
+            .environmentObject(ViewRoutterViewModel())
     }
 }

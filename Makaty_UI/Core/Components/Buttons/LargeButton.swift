@@ -20,7 +20,7 @@ struct LargeButton: View {
                 .multilineTextAlignment(.center)
         }
         .frame(width: 172, height: 154)
-        .background(Color.gray.opacity(0.3))
+        .background(Color.gray.opacity(0.3).ignoresSafeArea([]))
     }
 }
 

@@ -89,5 +89,6 @@ struct HistoryScreen: View {
 struct HistoryScreen_Previews: PreviewProvider {
     static var previews: some View {
         HistoryScreen()
+            .environmentObject(PointViewModel())
     }
 }
