@@ -11,6 +11,14 @@
 		4976F4C82938C8880061C781 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F4C72938C8880061C781 /* ContentView.swift */; };
 		4976F4CA2938C88A0061C781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4976F4C92938C88A0061C781 /* Assets.xcassets */; };
 		4976F4CD2938C88A0061C781 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4976F4CC2938C88A0061C781 /* Preview Assets.xcassets */; };
+		4976F4DC2938CFA80061C781 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4976F4DB2938CFA80061C781 /* Launch Screen.storyboard */; };
+		4976F4DE2938D2390061C781 /* LaunchScreenWithAnim.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F4DD2938D2390061C781 /* LaunchScreenWithAnim.swift */; };
+		4976F4E22938DE970061C781 /* PointScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F4E12938DE970061C781 /* PointScreen.swift */; };
+		4976F4E52938E1150061C781 /* LargeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F4E42938E1150061C781 /* LargeButton.swift */; };
+		4976F4E82938EF5B0061C781 /* PointViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F4E72938EF5B0061C781 /* PointViewRow.swift */; };
+		4976F4EA2938F2410061C781 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F4E92938F2410061C781 /* CustomLabel.swift */; };
+		4976F4EE2939CDE10061C781 /* PointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F4ED2939CDE10061C781 /* PointModel.swift */; };
+		4976F4F02939D4830061C781 /* HistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F4EF2939D4830061C781 /* HistoryScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		4976F4C72938C8880061C781 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		4976F4C92938C88A0061C781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4976F4CC2938C88A0061C781 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4976F4DB2938CFA80061C781 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		4976F4DD2938D2390061C781 /* LaunchScreenWithAnim.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenWithAnim.swift; sourceTree = "<group>"; };
+		4976F4E12938DE970061C781 /* PointScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointScreen.swift; sourceTree = "<group>"; };
+		4976F4E42938E1150061C781 /* LargeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButton.swift; sourceTree = "<group>"; };
+		4976F4E72938EF5B0061C781 /* PointViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointViewRow.swift; sourceTree = "<group>"; };
+		4976F4E92938F2410061C781 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		4976F4ED2939CDE10061C781 /* PointModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointModel.swift; sourceTree = "<group>"; };
+		4976F4EF2939D4830061C781 /* HistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,24 +89,18 @@
 		4976F4D32938CD420061C781 /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				4976F4D42938CD5B0061C781 /* Features */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		4976F4D42938CD5B0061C781 /* Features */ = {
-			isa = PBXGroup;
-			children = (
-				4976F4D72938CDB50061C781 /* Router */,
 				4976F4D62938CD980061C781 /* Components */,
+				4976F4EB2939CDB20061C781 /* Models */,
+				4976F4D72938CDB50061C781 /* Router */,
 				4976F4D52938CD8F0061C781 /* Screens */,
 			);
-			path = Features;
+			path = Core;
 			sourceTree = "<group>";
 		};
 		4976F4D52938CD8F0061C781 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				4976F4DF2938DE250061C781 /* MyPoints */,
 				4976F4DA2938CF080061C781 /* SplashScreen */,
 			);
 			path = Screens;
@@ -99,6 +109,8 @@
 		4976F4D62938CD980061C781 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4976F4E62938EF460061C781 /* Points */,
+				4976F4E32938E0E00061C781 /* Buttons */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -127,8 +139,60 @@
 		4976F4DA2938CF080061C781 /* SplashScreen */ = {
 			isa = PBXGroup;
 			children = (
+				4976F4DB2938CFA80061C781 /* Launch Screen.storyboard */,
+				4976F4DD2938D2390061C781 /* LaunchScreenWithAnim.swift */,
 			);
 			path = SplashScreen;
+			sourceTree = "<group>";
+		};
+		4976F4DF2938DE250061C781 /* MyPoints */ = {
+			isa = PBXGroup;
+			children = (
+				4976F4E02938DE770061C781 /* Views */,
+			);
+			path = MyPoints;
+			sourceTree = "<group>";
+		};
+		4976F4E02938DE770061C781 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4976F4E12938DE970061C781 /* PointScreen.swift */,
+				4976F4EF2939D4830061C781 /* HistoryScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4976F4E32938E0E00061C781 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				4976F4E42938E1150061C781 /* LargeButton.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		4976F4E62938EF460061C781 /* Points */ = {
+			isa = PBXGroup;
+			children = (
+				4976F4E72938EF5B0061C781 /* PointViewRow.swift */,
+				4976F4E92938F2410061C781 /* CustomLabel.swift */,
+			);
+			path = Points;
+			sourceTree = "<group>";
+		};
+		4976F4EB2939CDB20061C781 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4976F4EC2939CDC20061C781 /* Point */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4976F4EC2939CDC20061C781 /* Point */ = {
+			isa = PBXGroup;
+			children = (
+				4976F4ED2939CDE10061C781 /* PointModel.swift */,
+			);
+			path = Point;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4976F4DC2938CFA80061C781 /* Launch Screen.storyboard in Resources */,
 				4976F4CD2938C88A0061C781 /* Preview Assets.xcassets in Resources */,
 				4976F4CA2938C88A0061C781 /* Assets.xcassets in Resources */,
 			);
@@ -201,7 +266,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4976F4DE2938D2390061C781 /* LaunchScreenWithAnim.swift in Sources */,
+				4976F4E52938E1150061C781 /* LargeButton.swift in Sources */,
 				4976F4C82938C8880061C781 /* ContentView.swift in Sources */,
+				4976F4EA2938F2410061C781 /* CustomLabel.swift in Sources */,
+				4976F4F02939D4830061C781 /* HistoryScreen.swift in Sources */,
+				4976F4E22938DE970061C781 /* PointScreen.swift in Sources */,
+				4976F4E82938EF5B0061C781 /* PointViewRow.swift in Sources */,
+				4976F4EE2939CDE10061C781 /* PointModel.swift in Sources */,
 				4976F4C62938C8880061C781 /* Makaty_UIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -336,7 +408,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -365,7 +437,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
