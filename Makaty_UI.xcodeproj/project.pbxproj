@@ -19,6 +19,8 @@
 		4976F4EA2938F2410061C781 /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F4E92938F2410061C781 /* CustomLabel.swift */; };
 		4976F4EE2939CDE10061C781 /* PointModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F4ED2939CDE10061C781 /* PointModel.swift */; };
 		4976F4F02939D4830061C781 /* HistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F4EF2939D4830061C781 /* HistoryScreen.swift */; };
+		4976F4F32939D7C80061C781 /* PointFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F4F22939D7C80061C781 /* PointFilterViewModel.swift */; };
+		4976F4F52939E7520061C781 /* PointViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F4F42939E7520061C781 /* PointViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +37,8 @@
 		4976F4E92938F2410061C781 /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		4976F4ED2939CDE10061C781 /* PointModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointModel.swift; sourceTree = "<group>"; };
 		4976F4EF2939D4830061C781 /* HistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreen.swift; sourceTree = "<group>"; };
+		4976F4F22939D7C80061C781 /* PointFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointFilterViewModel.swift; sourceTree = "<group>"; };
+		4976F4F42939E7520061C781 /* PointViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,7 @@
 		4976F4DF2938DE250061C781 /* MyPoints */ = {
 			isa = PBXGroup;
 			children = (
+				4976F4F12939D77C0061C781 /* ViewModels */,
 				4976F4E02938DE770061C781 /* Views */,
 			);
 			path = MyPoints;
@@ -193,6 +198,15 @@
 				4976F4ED2939CDE10061C781 /* PointModel.swift */,
 			);
 			path = Point;
+			sourceTree = "<group>";
+		};
+		4976F4F12939D77C0061C781 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				4976F4F22939D7C80061C781 /* PointFilterViewModel.swift */,
+				4976F4F42939E7520061C781 /* PointViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,9 +280,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4976F4F52939E7520061C781 /* PointViewModel.swift in Sources */,
 				4976F4DE2938D2390061C781 /* LaunchScreenWithAnim.swift in Sources */,
 				4976F4E52938E1150061C781 /* LargeButton.swift in Sources */,
 				4976F4C82938C8880061C781 /* ContentView.swift in Sources */,
+				4976F4F32939D7C80061C781 /* PointFilterViewModel.swift in Sources */,
 				4976F4EA2938F2410061C781 /* CustomLabel.swift in Sources */,
 				4976F4F02939D4830061C781 /* HistoryScreen.swift in Sources */,
 				4976F4E22938DE970061C781 /* PointScreen.swift in Sources */,

@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct PointScreen: View {
+    
+    @StateObject var pointViewModel = PointViewModel()
+    
     var body: some View {
         NavigationStack {
             VStack {
@@ -27,18 +30,20 @@ struct PointScreen: View {
                         .font(.custom("HelveticaNeue-Medium", size: 16))
                     
                     LazyVStack(spacing: 10) {
-                        PointViewRow()
-                        PointViewRow()
-                        PointViewRow()
-                        PointViewRow()
+                        ForEach(pointViewModel.pointOders.prefix(4) ) { item in
+                            PointViewRow(model: PointModel(title: "", type: .win, totalPoints: 399, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
+                        }
                     }
                     
                     VStack(alignment: .center) {
                         HStack {
                             Spacer()
                         }
-                        Button {
-                            
+                        
+                        
+                        NavigationLink {
+                            HistoryScreen()
+                                .environmentObject(pointViewModel)
                         } label: {
                             Text("Voir l’historique complète")
                                 .font(.custom("HelveticaNeue-Medium", size: 14))
@@ -49,7 +54,7 @@ struct PointScreen: View {
                                     RoundedRectangle(cornerRadius: 24)
                                         .foregroundColor(.gray)
                                 )
-                    }
+                        }
                     }
 
                     

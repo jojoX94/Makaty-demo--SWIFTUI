@@ -8,6 +8,9 @@
 import SwiftUI
 
 struct PointViewRow: View {
+    
+    let model: PointModel
+    
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
@@ -24,13 +27,16 @@ struct PointViewRow: View {
             }
         }
         .padding(10)
-    .background(Color.gray.opacity(0.1))
+//    .background(Color.gray.opacity(0.1))
+        .background(
+            model.type == .win ? Color.green.opacity(0.4) : Color.red.opacity(0.4)
+        )
     }
     
 }
 
 struct PointViewRow_Previews: PreviewProvider {
     static var previews: some View {
-        PointViewRow()
+        PointViewRow(model: PointModel(id: "", title: "", type: .consume, totalPoints: 399, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
     }
 }
