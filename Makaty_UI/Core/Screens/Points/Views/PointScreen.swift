@@ -36,27 +36,16 @@ struct PointScreen: View {
                         }
                     }
                     
-                    VStack(alignment: .center) {
-                        HStack {
-                            Spacer()
-                        }
                         
-                        
-                        NavigationLink {
-                            HistoryScreen()
-                                .environmentObject(pointViewModel)
-                        } label: {
-                            Text("Voir l’historique complète")
-                                .font(.custom("HelveticaNeue-Medium", size: 14))
-                                .padding(.horizontal, 21)
-                                .padding(.vertical, 16)
-                                .foregroundColor(.white)
-                                .background(
-                                    RoundedRectangle(cornerRadius: 24)
-                                        .foregroundColor(.gray)
-                                )
-                        }
+                    NavigationLink {
+                        HistoryScreen()
+                            .environmentObject(pointViewModel)
+                    } label: {
+                        Text("Voir l’historique complète")
+                            .textwithButtonStyle()
                     }
+                    .frame(maxWidth: .infinity)
+
 
                     
                     HStack{

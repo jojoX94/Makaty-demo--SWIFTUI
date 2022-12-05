@@ -29,6 +29,18 @@
 		4976F50D293A29290061C781 /* RouterScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F50C293A29290061C781 /* RouterScreen.swift */; };
 		4976F50F293A30F80061C781 /* CustomToolBarContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F50E293A30F80061C781 /* CustomToolBarContent.swift */; };
 		4976F51B293A3A2F0061C781 /* ProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F51A293A3A2F0061C781 /* ProfileScreen.swift */; };
+		4976F51E293DC33E0061C781 /* TextFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F51D293DC33E0061C781 /* TextFormField.swift */; };
+		4976F520293DCF8D0061C781 /* View+HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F51F293DCF8D0061C781 /* View+HideKeyboard.swift */; };
+		4976F523293DD22F0061C781 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F522293DD22F0061C781 /* CustomDatePicker.swift */; };
+		4976F527293DE0EE0061C781 /* TextWithButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F526293DE0EE0061C781 /* TextWithButtonStyle.swift */; };
+		4976F529293DE19C0061C781 /* View+TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F528293DE19B0061C781 /* View+TextStyle.swift */; };
+		4976F52C293DE4030061C781 /* TextSubTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F52B293DE4030061C781 /* TextSubTitle.swift */; };
+		4976F52F293DE5600061C781 /* CustomSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F52E293DE5600061C781 /* CustomSwitch.swift */; };
+		4976F534293DF0160061C781 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F533293DF0160061C781 /* LabelView.swift */; };
+		4976F536293E181C0061C781 /* EditProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F535293E181C0061C781 /* EditProfileScreen.swift */; };
+		4976F539293E1B3C0061C781 /* Chips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F538293E1B3C0061C781 /* Chips.swift */; };
+		4976F53B293E1C290061C781 /* ChipsContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F53A293E1C290061C781 /* ChipsContent.swift */; };
+		4976F53D293E1C8F0061C781 /* ChipsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F53C293E1C8F0061C781 /* ChipsDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +67,18 @@
 		4976F50C293A29290061C781 /* RouterScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterScreen.swift; sourceTree = "<group>"; };
 		4976F50E293A30F80061C781 /* CustomToolBarContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomToolBarContent.swift; sourceTree = "<group>"; };
 		4976F51A293A3A2F0061C781 /* ProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileScreen.swift; sourceTree = "<group>"; };
+		4976F51D293DC33E0061C781 /* TextFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFormField.swift; sourceTree = "<group>"; };
+		4976F51F293DCF8D0061C781 /* View+HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+HideKeyboard.swift"; sourceTree = "<group>"; };
+		4976F522293DD22F0061C781 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
+		4976F526293DE0EE0061C781 /* TextWithButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextWithButtonStyle.swift; sourceTree = "<group>"; };
+		4976F528293DE19B0061C781 /* View+TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+TextStyle.swift"; sourceTree = "<group>"; };
+		4976F52B293DE4030061C781 /* TextSubTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSubTitle.swift; sourceTree = "<group>"; };
+		4976F52E293DE5600061C781 /* CustomSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwitch.swift; sourceTree = "<group>"; };
+		4976F533293DF0160061C781 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
+		4976F535293E181C0061C781 /* EditProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileScreen.swift; sourceTree = "<group>"; };
+		4976F538293E1B3C0061C781 /* Chips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chips.swift; sourceTree = "<group>"; };
+		4976F53A293E1C290061C781 /* ChipsContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsContent.swift; sourceTree = "<group>"; };
+		4976F53C293E1C8F0061C781 /* ChipsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +135,7 @@
 			isa = PBXGroup;
 			children = (
 				4976F4EB2939CDB20061C781 /* Models */,
+				4976F52A293DE3D80061C781 /* Styles */,
 				4976F4D62938CD980061C781 /* Components */,
 				4976F4D52938CD8F0061C781 /* Screens */,
 			);
@@ -133,6 +158,11 @@
 		4976F4D62938CD980061C781 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4976F537293E1B0E0061C781 /* Chips */,
+				4976F530293DED000061C781 /* Label */,
+				4976F52D293DE54F0061C781 /* Switch */,
+				4976F521293DD21C0061C781 /* DatePicker */,
+				4976F51C293DC25A0061C781 /* TextField */,
 				4976F5022939FF530061C781 /* Router */,
 				4976F4FC2939F7B60061C781 /* ToolBar */,
 				4976F4E62938EF460061C781 /* Points */,
@@ -153,6 +183,8 @@
 		4976F4D82938CDC10061C781 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				4976F51F293DCF8D0061C781 /* View+HideKeyboard.swift */,
+				4976F528293DE19B0061C781 /* View+TextStyle.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -212,6 +244,7 @@
 			isa = PBXGroup;
 			children = (
 				4976F4EC2939CDC20061C781 /* Point */,
+				4976F53C293E1C8F0061C781 /* ChipsDataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -334,6 +367,7 @@
 			isa = PBXGroup;
 			children = (
 				4976F51A293A3A2F0061C781 /* ProfileScreen.swift */,
+				4976F535293E181C0061C781 /* EditProfileScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -343,6 +377,56 @@
 			children = (
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4976F51C293DC25A0061C781 /* TextField */ = {
+			isa = PBXGroup;
+			children = (
+				4976F51D293DC33E0061C781 /* TextFormField.swift */,
+			);
+			path = TextField;
+			sourceTree = "<group>";
+		};
+		4976F521293DD21C0061C781 /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				4976F522293DD22F0061C781 /* CustomDatePicker.swift */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
+		4976F52A293DE3D80061C781 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				4976F526293DE0EE0061C781 /* TextWithButtonStyle.swift */,
+				4976F52B293DE4030061C781 /* TextSubTitle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		4976F52D293DE54F0061C781 /* Switch */ = {
+			isa = PBXGroup;
+			children = (
+				4976F52E293DE5600061C781 /* CustomSwitch.swift */,
+			);
+			path = Switch;
+			sourceTree = "<group>";
+		};
+		4976F530293DED000061C781 /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				4976F533293DF0160061C781 /* LabelView.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		4976F537293E1B0E0061C781 /* Chips */ = {
+			isa = PBXGroup;
+			children = (
+				4976F538293E1B3C0061C781 /* Chips.swift */,
+				4976F53A293E1C290061C781 /* ChipsContent.swift */,
+			);
+			path = Chips;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,21 +502,33 @@
 			files = (
 				4976F4F52939E7520061C781 /* PointViewModel.swift in Sources */,
 				4976F4DE2938D2390061C781 /* LaunchScreenWithAnim.swift in Sources */,
+				4976F523293DD22F0061C781 /* CustomDatePicker.swift in Sources */,
 				4976F4E52938E1150061C781 /* LargeButton.swift in Sources */,
+				4976F529293DE19C0061C781 /* View+TextStyle.swift in Sources */,
+				4976F527293DE0EE0061C781 /* TextWithButtonStyle.swift in Sources */,
 				4976F51B293A3A2F0061C781 /* ProfileScreen.swift in Sources */,
 				4976F4C82938C8880061C781 /* ContentView.swift in Sources */,
 				4976F507293A14A50061C781 /* LinkLabel.swift in Sources */,
 				4976F4F32939D7C80061C781 /* PointFilterViewModel.swift in Sources */,
+				4976F51E293DC33E0061C781 /* TextFormField.swift in Sources */,
 				4976F5012939FE430061C781 /* SideMenuScreen.swift in Sources */,
+				4976F52F293DE5600061C781 /* CustomSwitch.swift in Sources */,
 				4976F50D293A29290061C781 /* RouterScreen.swift in Sources */,
 				4976F509293A163A0061C781 /* SideMenuViewModel.swift in Sources */,
+				4976F53B293E1C290061C781 /* ChipsContent.swift in Sources */,
+				4976F520293DCF8D0061C781 /* View+HideKeyboard.swift in Sources */,
 				4976F4F92939F35C0061C781 /* CardScreen.swift in Sources */,
+				4976F539293E1B3C0061C781 /* Chips.swift in Sources */,
 				4976F4EA2938F2410061C781 /* CustomLabel.swift in Sources */,
 				4976F4F02939D4830061C781 /* HistoryScreen.swift in Sources */,
 				4976F4E22938DE970061C781 /* PointScreen.swift in Sources */,
+				4976F53D293E1C8F0061C781 /* ChipsDataModel.swift in Sources */,
+				4976F534293DF0160061C781 /* LabelView.swift in Sources */,
 				4976F4E82938EF5B0061C781 /* PointViewRow.swift in Sources */,
 				4976F50F293A30F80061C781 /* CustomToolBarContent.swift in Sources */,
+				4976F52C293DE4030061C781 /* TextSubTitle.swift in Sources */,
 				4976F50B293A28910061C781 /* RouterViewModel.swift in Sources */,
+				4976F536293E181C0061C781 /* EditProfileScreen.swift in Sources */,
 				4976F4EE2939CDE10061C781 /* PointModel.swift in Sources */,
 				4976F4C62938C8880061C781 /* Makaty_UIApp.swift in Sources */,
 			);
