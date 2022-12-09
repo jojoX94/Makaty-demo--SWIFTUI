@@ -32,7 +32,7 @@ struct PointScreen: View {
                     
                     LazyVStack(spacing: 10) {
                         ForEach(pointViewModel.pointOders.prefix(4) ) { item in
-                            PointViewRow(model: PointModel(title: "", type: .win, totalPoints: 399, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
+                            CustomPointViewRow(model: PointModel(title: "Ticket N°00123", type: .win, totalPoints: 399, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
                         }
                     }
                     

@@ -41,6 +41,9 @@
 		4976F539293E1B3C0061C781 /* Chips.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F538293E1B3C0061C781 /* Chips.swift */; };
 		4976F53B293E1C290061C781 /* ChipsContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F53A293E1C290061C781 /* ChipsContent.swift */; };
 		4976F53D293E1C8F0061C781 /* ChipsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F53C293E1C8F0061C781 /* ChipsDataModel.swift */; };
+		4976F541293E2B1B0061C781 /* ExampleAlignmentGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F540293E2B1B0061C781 /* ExampleAlignmentGuide.swift */; };
+		49D221B429435987006B3730 /* PointLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D221B329435987006B3730 /* PointLabelView.swift */; };
+		49D221B629435A40006B3730 /* CustomPointViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D221B529435A40006B3730 /* CustomPointViewRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -79,6 +82,9 @@
 		4976F538293E1B3C0061C781 /* Chips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chips.swift; sourceTree = "<group>"; };
 		4976F53A293E1C290061C781 /* ChipsContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsContent.swift; sourceTree = "<group>"; };
 		4976F53C293E1C8F0061C781 /* ChipsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsDataModel.swift; sourceTree = "<group>"; };
+		4976F540293E2B1B0061C781 /* ExampleAlignmentGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAlignmentGuide.swift; sourceTree = "<group>"; };
+		49D221B329435987006B3730 /* PointLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointLabelView.swift; sourceTree = "<group>"; };
+		49D221B529435A40006B3730 /* CustomPointViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPointViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +164,7 @@
 		4976F4D62938CD980061C781 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				4976F53F293E2B040061C781 /* AlignmentGuide */,
 				4976F537293E1B0E0061C781 /* Chips */,
 				4976F530293DED000061C781 /* Label */,
 				4976F52D293DE54F0061C781 /* Switch */,
@@ -236,6 +243,7 @@
 			children = (
 				4976F4E72938EF5B0061C781 /* PointViewRow.swift */,
 				4976F4E92938F2410061C781 /* CustomLabel.swift */,
+				49D221B529435A40006B3730 /* CustomPointViewRow.swift */,
 			);
 			path = Points;
 			sourceTree = "<group>";
@@ -416,6 +424,7 @@
 			isa = PBXGroup;
 			children = (
 				4976F533293DF0160061C781 /* LabelView.swift */,
+				49D221B329435987006B3730 /* PointLabelView.swift */,
 			);
 			path = Label;
 			sourceTree = "<group>";
@@ -427,6 +436,14 @@
 				4976F53A293E1C290061C781 /* ChipsContent.swift */,
 			);
 			path = Chips;
+			sourceTree = "<group>";
+		};
+		4976F53F293E2B040061C781 /* AlignmentGuide */ = {
+			isa = PBXGroup;
+			children = (
+				4976F540293E2B1B0061C781 /* ExampleAlignmentGuide.swift */,
+			);
+			path = AlignmentGuide;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -500,8 +517,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49D221B429435987006B3730 /* PointLabelView.swift in Sources */,
 				4976F4F52939E7520061C781 /* PointViewModel.swift in Sources */,
 				4976F4DE2938D2390061C781 /* LaunchScreenWithAnim.swift in Sources */,
+				49D221B629435A40006B3730 /* CustomPointViewRow.swift in Sources */,
 				4976F523293DD22F0061C781 /* CustomDatePicker.swift in Sources */,
 				4976F4E52938E1150061C781 /* LargeButton.swift in Sources */,
 				4976F529293DE19C0061C781 /* View+TextStyle.swift in Sources */,
@@ -515,6 +534,7 @@
 				4976F52F293DE5600061C781 /* CustomSwitch.swift in Sources */,
 				4976F50D293A29290061C781 /* RouterScreen.swift in Sources */,
 				4976F509293A163A0061C781 /* SideMenuViewModel.swift in Sources */,
+				4976F541293E2B1B0061C781 /* ExampleAlignmentGuide.swift in Sources */,
 				4976F53B293E1C290061C781 /* ChipsContent.swift in Sources */,
 				4976F520293DCF8D0061C781 /* View+HideKeyboard.swift in Sources */,
 				4976F4F92939F35C0061C781 /* CardScreen.swift in Sources */,

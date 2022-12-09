@@ -74,7 +74,7 @@ struct HistoryScreen: View {
             ScrollView {
                 LazyVStack(spacing: 10) {
                     ForEach(filteredPointOrder ) { item in
-                        PointViewRow(model: PointModel(title: "", type: item.type, totalPoints: item.totalPoints, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
+                        CustomPointViewRow(model: PointModel(title: "Ticket N°00123", type: item.type, totalPoints: item.totalPoints, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
                         
                         
                     }
