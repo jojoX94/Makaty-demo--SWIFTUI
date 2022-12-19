@@ -16,5 +16,7 @@ struct ChipsContent: View {
 struct ChipsContent_Previews: PreviewProvider {
     static var previews: some View {
         ChipsContent()
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }

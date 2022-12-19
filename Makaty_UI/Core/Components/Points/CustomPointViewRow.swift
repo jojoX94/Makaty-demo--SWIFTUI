@@ -16,6 +16,7 @@ struct CustomPointViewRow: View {
             VStack(alignment: .leading) {
                 Text(model.title)
                     .font(.custom("HelveticaNeue-Light", size: 16))
+                    .foregroundColor(.black)
                 Divider()
                 VStack(alignment: .leading, spacing: 8) {
                     PointLabelView(icon: "candybarphone", text: "Feugiat ut tempor")
@@ -42,6 +43,11 @@ struct CustomPointViewRow: View {
 
 struct CustomPointViewRow_Previews: PreviewProvider {
     static var previews: some View {
-        CustomPointViewRow(model: PointModel(id: "", title: "Ticket N°00123 ", type: .consume, totalPoints: 399, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
+        VStack {
+            CustomPointViewRow(model: PointModel(id: "", title: "Ticket N°00123 ", type: .consume, totalPoints: 399, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
+            CustomPointViewRow(model: PointModel(id: "", title: "Ticket N°00123 ", type: .win, totalPoints: 399, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
+        }
+        .previewLayout(.sizeThatFits)
+        .padding()
     }
 }

@@ -23,5 +23,7 @@ struct CustomSwitch: View {
 struct CustomSwitch_Previews: PreviewProvider {
     static var previews: some View {
         CustomSwitch(label: "Recevoir des notifications pour les nouvelles offres, pour la fin d’une offre  et pour les MAJ de mon solde", value: .constant(true))
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }

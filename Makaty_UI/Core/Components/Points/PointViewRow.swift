@@ -38,5 +38,7 @@ struct PointViewRow: View {
 struct PointViewRow_Previews: PreviewProvider {
     static var previews: some View {
         PointViewRow(model: PointModel(id: "", title: "", type: .consume, totalPoints: 399, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }

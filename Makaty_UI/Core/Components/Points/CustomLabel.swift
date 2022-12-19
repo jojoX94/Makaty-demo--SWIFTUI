@@ -33,5 +33,7 @@ struct CustomLabel: View {
 struct CustomLabel_Previews: PreviewProvider {
     static var previews: some View {
         CustomLabel(icon: "flag.2.crossed", title: "Date", value: "01/12/2022")
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }

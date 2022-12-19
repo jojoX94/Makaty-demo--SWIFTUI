@@ -31,5 +31,7 @@ struct CustomDatePicker: View {
 struct CustomDatePicker_Previews: PreviewProvider {
     static var previews: some View {
         CustomDatePicker(label: "Date d’adhésion", value: .constant(Date()))
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }

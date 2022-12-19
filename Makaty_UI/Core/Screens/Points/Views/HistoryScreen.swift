@@ -30,16 +30,9 @@ struct HistoryScreen: View {
     var body: some View {
         VStack(alignment: .leading) {
             
-            HStack(spacing: 18) {
-                Image(systemName: "chevron.backward")
-                    .onTapGesture {
-                        presentationMode.wrappedValue.dismiss()
-                    }
-                Text("HISTORIQUE DES POINTS")
-                    .font(.custom("HelveticaNeue-Regular", size: 14))
-                Spacer()
+            TopNavigationBar(screenTitle: "HISTORIQUE DES POINTS") {
+                presentationMode.wrappedValue.dismiss()
             }
-            .padding(.bottom, 30)
             
             HStack(spacing: 10) {
                 ForEach(PointFilterViewModel.allCases, id: \.rawValue) { item in
@@ -74,9 +67,11 @@ struct HistoryScreen: View {
             ScrollView {
                 LazyVStack(spacing: 10) {
                     ForEach(filteredPointOrder ) { item in
-                        CustomPointViewRow(model: PointModel(title: "Ticket N°00123", type: item.type, totalPoints: item.totalPoints, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
-                        
-                        
+                        NavigationLink(destination: {
+                            DetailHistoryView()
+                        }, label: {
+                            CustomPointViewRow(model: PointModel(title: "Ticket N°00123", type: item.type, totalPoints: item.totalPoints, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
+                        })
                     }
                 }
             }

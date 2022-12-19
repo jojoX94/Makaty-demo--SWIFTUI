@@ -31,8 +31,12 @@ struct PointScreen: View {
                         .font(.custom("HelveticaNeue-Medium", size: 16))
                     
                     LazyVStack(spacing: 10) {
-                        ForEach(pointViewModel.pointOders.prefix(4) ) { item in
-                            CustomPointViewRow(model: PointModel(title: "Ticket N°00123", type: .win, totalPoints: 399, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
+                        ForEach(pointViewModel.pointOders.prefix(3) ) { item in
+                            NavigationLink(destination: {
+                                DetailHistoryView()
+                            }, label: {
+                                CustomPointViewRow(model: PointModel(title: "Ticket N°00123", type: .win, totalPoints: 399, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
+                            })
                         }
                     }
                     

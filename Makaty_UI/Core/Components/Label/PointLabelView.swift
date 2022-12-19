@@ -24,5 +24,7 @@ struct PointLabelView: View {
 struct PointLabelView_Previews: PreviewProvider {
     static var previews: some View {
         PointLabelView(icon: "clock", text: "Feugiat ut tempor")
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }

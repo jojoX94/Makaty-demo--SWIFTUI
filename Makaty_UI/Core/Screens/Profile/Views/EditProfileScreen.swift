@@ -17,6 +17,8 @@ struct EditProfileScreen: View {
     @State var preference: String = ""
     @State var date: Date = Date()
     
+    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    
     @State var listChips: [ChipsDataModel] = [
         ChipsDataModel(isSelected: true, title: "iPhone"),
         ChipsDataModel(isSelected: false, title: "iPad"),
@@ -29,6 +31,10 @@ struct EditProfileScreen: View {
         var height = CGFloat.zero
         
         VStack {
+            TopNavigationBar(screenTitle: "EDITER VOTRE PROFILS") {
+                presentationMode.wrappedValue.dismiss()
+            }
+            
             TextFormField(label: "Nom", value: $name)
             TextFormField(label: "PRENOM", value: $username)
             TextFormField(label: "CIVILITE", value: $civility)

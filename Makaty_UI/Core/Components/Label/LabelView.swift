@@ -31,5 +31,7 @@ struct LabelView: View {
 struct LabelView_Previews: PreviewProvider {
     static var previews: some View {
         LabelView(label: "Nom", value: "Rakoto")
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }

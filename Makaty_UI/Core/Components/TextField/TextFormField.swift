@@ -33,5 +33,7 @@ struct TextFormField: View {
 struct TextFormField_Previews: PreviewProvider {
     static var previews: some View {
         TextFormField(label: "Nom", value: .constant(""))
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }
