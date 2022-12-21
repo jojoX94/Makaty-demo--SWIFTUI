@@ -13,31 +13,35 @@ struct CustomPointViewRow: View {
     
     var body: some View {
         HStack(alignment: .top) {
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 10) {
                 Text(model.title)
-                    .font(.custom("SFProText-Light", size: 16))
-                    .foregroundColor(.black)
-                Divider()
+                    .font(.custom("SFProText-Medium", size: 16))
+                    .foregroundColor(Color("Black"))
+                
                 VStack(alignment: .leading, spacing: 8) {
-                    PointLabelView(icon: "candybarphone", text: "Feugiat ut tempor")
-                    PointLabelView(icon: "clock", text: "01/12/2022")
+                    PointLabelView(type: .shop, text: "iPhone 13 pro max, iPad 9... ")
+                    PointLabelView(type: .time, text: "01/12/2022")
                 }
             }
+            
+            Spacer()
+            
             VStack {
                 Text("Points")
-                    .font(.custom("SFProText-Medium", size: 16))
+                    .font(.custom("SFProText-Medium", size: 12))
                 Text( model.type == .win ? "+\(model.totalPoints)" : "-\(model.totalPoints)")
-                    .font(.custom("SFProText-Bold", size: 20))
+                    .font(.custom("SFProText-Medium", size: 22))
             }
             .foregroundColor(.white)
             .padding(10)
-            .background(Color.black.opacity(0.8))
+            .background(
+                model.type == .win ? Color("Green") : Color("Red")
+            )
         }
-        .padding(10)
-//    .background(Color.gray.opacity(0.1))
-        .background(
-            model.type == .win ? Color.green.opacity(0.4) : Color.red.opacity(0.4)
-        )
+        .padding(.vertical, 14)
+        .padding(.horizontal, 18)
+        .border(Color("Gray").opacity(0.3), width: 1)
+
     }
 }
 

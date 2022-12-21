@@ -65,7 +65,7 @@ struct ProfileScreen: View {
                 .padding(.top, 32)
                 .background(Color.white)
                 .toolbar {
-                    CustomToolBarContent(title: "MON PROFIL") {
+                    CustomToolBarContent(titleType: .text, title: "MON PROFIL") {
                         withAnimation {
                             viewRouter.showMenu = true
                         }

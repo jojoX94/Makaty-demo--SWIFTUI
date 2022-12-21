@@ -7,24 +7,31 @@
 
 import SwiftUI
 
+enum PointLabelType {
+    case shop, time
+}
+
 struct PointLabelView: View {
-    let icon: String
+    let type: PointLabelType
     let text: String
     var body: some View {
         HStack(spacing: 10) {
-            Image(systemName: icon)
+            Image(type == .shop ? "ShopIcon" : "ScheduleIcon")
                 .font(.title3)
             Text(text)
                 .font(.custom("SFProText-Regular", size: 14))
+                .foregroundColor(Color("Gray"))
         }
-        .foregroundColor(.black.opacity(0.7))
     }
 }
 
 struct PointLabelView_Previews: PreviewProvider {
     static var previews: some View {
-        PointLabelView(icon: "clock", text: "Feugiat ut tempor")
-            .previewLayout(.sizeThatFits)
-            .padding()
+        VStack {
+            PointLabelView(type: .shop, text: "Feugiat ut tempor")
+            PointLabelView(type: .time, text: "Feugiat ut tempor")
+        }
+        .previewLayout(.sizeThatFits)
+        .padding()
     }
 }

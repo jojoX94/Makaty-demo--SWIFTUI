@@ -7,18 +7,36 @@
 
 import SwiftUI
 
+enum customToolBarTitleType {
+    case text, image
+}
+
 struct CustomToolBarContent: ToolbarContent {
+    let titleType: customToolBarTitleType
     let title: String
+    let image: String
     let action: () -> Void
+    
+    init(titleType: customToolBarTitleType, title: String = "", image: String = "", action: @escaping () -> Void) {
+        self.titleType = titleType
+        self.title = title
+        self.image = image
+        self.action = action
+    }
 
     var body: some ToolbarContent {
         ToolbarItem(placement: .navigationBarLeading) {
-            Text("MAKATY")
-                .font(.custom("SFProText-Bold", size: 22))
+            if titleType == .text {
+                Text(title)
+                    .font(.custom("SFProText-Bold", size: 22))
+            } else {
+                Image("LogoMin")
+                    .renderingMode(.original)
+            }
         }
         ToolbarItem(placement: .navigationBarTrailing) {
             HStack {
-                Image(systemName: "menucard")
+                Image("MenuIcon")
                     .onTapGesture {
                         withAnimation {
                             action()

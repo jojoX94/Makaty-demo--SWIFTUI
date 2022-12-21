@@ -9,24 +9,34 @@ import SwiftUI
 
 struct LaunchScreenWithAnim: View {
     var body: some View {
-        GeometryReader { geometry in
-            
-            VStack() {
-                Text("MAKATY")
-                    .font(.custom("SFProText-Bold", size: 40))
-                
-                Spacer()
-                
-                ProgressView(value: 38, total: 100)
-                    .tint(.gray)
-                    .clipShape(Rectangle())
-                    .frame(width: geometry.size.width/3.4)
-                    .scaleEffect(x: 1, y: 2, anchor: .center)
-                    
-            }
-            .frame(height: geometry.size.height/2)
-            .position(x: geometry.size.width / 2, y: geometry.size.height / 1.6)
+        VStack {
+            Spacer()
+            Image("LogoFull")
+            Spacer()
         }
+        .onAppear {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            }
+        }
+        
+//        GeometryReader { geometry in
+//
+//            VStack() {
+//                Text("MAKATY")
+//                    .font(.custom("SFProText-Bold", size: 40))
+//
+//                Spacer()
+//
+//                ProgressView(value: 38, total: 100)
+//                    .tint(.gray)
+//                    .clipShape(Rectangle())
+//                    .frame(width: geometry.size.width/3.4)
+//                    .scaleEffect(x: 1, y: 2, anchor: .center)
+//
+//            }
+//            .frame(height: geometry.size.height/2)
+//            .position(x: geometry.size.width / 2, y: geometry.size.height / 1.6)
+//        }
         
     }
 }

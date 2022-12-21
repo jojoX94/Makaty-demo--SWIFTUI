@@ -11,11 +11,12 @@ struct TextWithButtonStyle: ViewModifier {
     func body(content: Content) -> some View {
         content
             .font(.custom("SFProText-Medium", size: 14))
-            .frame(width: 228, height: 40)
+            .padding(.vertical, 16)
+            .padding(.horizontal, 24)
             .foregroundColor(.white)
             .background(
-                RoundedRectangle(cornerRadius: 24)
-                    .foregroundColor(.gray)
+                RoundedRectangle(cornerRadius: 30)
+                    .foregroundColor(.black)
             )
     }
 }

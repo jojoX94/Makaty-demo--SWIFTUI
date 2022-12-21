@@ -14,69 +14,74 @@ struct PointScreen: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
-                VStack(spacing: 10) {
-                    Text("MES POINTS")
-                        .font(.custom("SFProText-Regular", size: 14))
-                    HStack(alignment: .bottom) {
-                        Text("1240")
-                            .font(.custom("SFProText-Regular", size: 30))
-                        Text("PTS")
-                            .font(.custom("SFProText-Regular", size: 18))
+            ScrollView {
+                VStack {
+                    VStack(spacing: 0) {
+                        Text("Mes points de fidélité")
+                            .font(.custom("SFProText-Medium", size: 18))
+                            .foregroundColor(Color("Gray"))
+                            .padding(.bottom, 14)
+                        HStack(alignment: .center, spacing: 8) {
+                            Text("1240")
+                                .font(.custom("SFProText-Medium", size: 56))
+                            Text("PTS")
+                                .font(.custom("SFProText-Regular", size: 16))
+                        }
+                        .padding(.bottom, 12)
+                        Text("1 POINT = 100 AR")
+                            .font(.custom("SFProText-Regular", size: 14))
                     }
-                }
-                
-                VStack(alignment: .leading, spacing: 14) {
-                    Text("HISTORIQUE DES POINTS")
-                        .font(.custom("SFProText-Medium", size: 16))
                     
-                    LazyVStack(spacing: 10) {
-                        ForEach(pointViewModel.pointOders.prefix(3) ) { item in
-                            NavigationLink(destination: {
-                                DetailHistoryView()
-                            }, label: {
-                                CustomPointViewRow(model: PointModel(title: "Ticket N°00123", type: .win, totalPoints: 399, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
-                            })
+                    VStack(alignment: .leading, spacing: 14) {
+                        Text("Historique des points")
+                            .font(.custom("SFProText-Medium", size: 22))
+                            .foregroundColor(Color("Blue"))
+                        
+                        LazyVStack(spacing: 10) {
+                            ForEach(pointViewModel.pointOders.prefix(3) ) { item in
+                                NavigationLink(destination: {
+                                    DetailHistoryView()
+                                }, label: {
+                                    CustomPointViewRow(model: PointModel(title: "Facture N°00123", type: .win, totalPoints: 399, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
+                                })
+                            }
+                        }
+                        
+                            
+                        NavigationLink {
+                            HistoryScreen()
+                                .environmentObject(pointViewModel)
+                        } label: {
+                            Text("Historique complète")
+                                .textwithButtonStyle()
+                        }
+                        .frame(maxWidth: .infinity)
+
+
+                        
+                        HStack{
+                            Spacer()
                         }
                     }
                     
-                        
-                    NavigationLink {
-                        HistoryScreen()
-                            .environmentObject(pointViewModel)
-                    } label: {
-                        Text("Voir l’historique complète")
-                            .textwithButtonStyle()
-                    }
-                    .frame(maxWidth: .infinity)
-
-
+                   Spacer()
                     
-                    HStack{
-                        Spacer()
+                    VStack(spacing: 10) {
+                        LargeButton(title: "Voir le catalogue", subTitle: "produits", backgroundImageName: "CatalogueImg_clean")
+                        LargeButton(title: "Voir les offres", subTitle: "MAKATY", backgroundImageName: "OffersImg_clean")
                     }
                 }
+                .navigationBarBackButtonHidden(true)
                 .padding()
-                
-                
-                
-                
-               Spacer()
-                
-                HStack(spacing: 10) {
-                    LargeButton(label: "Voir le catalogue produits")
-                    LargeButton(label: "Voir le offres MAKATY")
-                }
-            }
-            .navigationBarBackButtonHidden(true)
-            .padding(.top, 40)
-            .padding(.bottom, 10)
-            .toolbar {
-                CustomToolBarContent(title: "MAKATY") {
-                    withAnimation {
-                        viewRouter.showMenu = true
+                .padding(.top, 40)
+                .padding(.bottom, 10)
+                .toolbar {
+                    CustomToolBarContent(titleType: .image) {
+                        withAnimation {
+                            viewRouter.showMenu = true
+                        }
                     }
-                }
+            }
             }
         }
     }

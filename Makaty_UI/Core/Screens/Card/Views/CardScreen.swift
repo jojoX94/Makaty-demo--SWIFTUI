@@ -35,7 +35,7 @@ struct CardScreen: View {
 
             }
             .toolbar {
-                CustomToolBarContent(title: "MA CARTE") {
+                CustomToolBarContent(titleType: .text, title: "MA CARTE") {
                     withAnimation {
                         viewRouter.showMenu = true
                     }
