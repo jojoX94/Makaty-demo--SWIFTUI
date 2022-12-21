@@ -15,10 +15,10 @@ struct PointViewRow: View {
         VStack(alignment: .leading) {
             HStack {
                 Text("Libéllé de l’offre")
-                    .font(.custom("HelveticaNeue-Light", size: 16))
+                    .font(.custom("SFProText-Light", size: 16))
                 Spacer()
                 Text("#1002")
-                    .font(.custom("HelveticaNeue-Light", size: 16))
+                    .font(.custom("SFProText-Light", size: 16))
             }
             Divider()
             HStack(spacing: 50) {

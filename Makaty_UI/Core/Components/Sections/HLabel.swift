@@ -28,7 +28,7 @@ struct HLabel: View {
             Spacer()
             Text(value)
         }
-        .font(.custom("HelveticaNeue-Regular", size: size == .regular ? 14 : 16))
+        .font(.custom("SFProText-Regular", size: size == .regular ? 14 : 16))
         .foregroundColor(size == .regular ? .black.opacity(0.4) : .black)
     }
 }

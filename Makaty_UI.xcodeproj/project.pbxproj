@@ -47,6 +47,13 @@
 		4976F53B293E1C290061C781 /* ChipsContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F53A293E1C290061C781 /* ChipsContent.swift */; };
 		4976F53D293E1C8F0061C781 /* ChipsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F53C293E1C8F0061C781 /* ChipsDataModel.swift */; };
 		4976F541293E2B1B0061C781 /* ExampleAlignmentGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F540293E2B1B0061C781 /* ExampleAlignmentGuide.swift */; };
+		499CCBA22952EAEF00D8B782 /* SFProText-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 499CCBA12952EABF00D8B782 /* SFProText-Thin.ttf */; };
+		499CCBA32952EAF300D8B782 /* SFProText-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 499CCBA02952EAB700D8B782 /* SFProText-Semibold.ttf */; };
+		499CCBA42952EAF600D8B782 /* SFProText-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 499CCB9F2952EAB100D8B782 /* SFProText-Regular.ttf */; };
+		499CCBA52952EAF800D8B782 /* SFProText-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 499CCB9E2952EAAA00D8B782 /* SFProText-Medium.ttf */; };
+		499CCBA62952EAFA00D8B782 /* SFProText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 499CCB9D2952EAA200D8B782 /* SFProText-Light.ttf */; };
+		499CCBA72952EAFC00D8B782 /* SFProText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 499CCB9C2952EA9600D8B782 /* SFProText-Bold.ttf */; };
+		499CCBAA2952EBCF00D8B782 /* SFProText-Ultralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 499CCBA92952EBCF00D8B782 /* SFProText-Ultralight.ttf */; };
 		49D221B429435987006B3730 /* PointLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D221B329435987006B3730 /* PointLabelView.swift */; };
 		49D221B629435A40006B3730 /* CustomPointViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D221B529435A40006B3730 /* CustomPointViewRow.swift */; };
 		49D221BB29435F92006B3730 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 49D221BA29435F92006B3730 /* FirebaseAuth */; };
@@ -96,6 +103,14 @@
 		4976F53A293E1C290061C781 /* ChipsContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsContent.swift; sourceTree = "<group>"; };
 		4976F53C293E1C8F0061C781 /* ChipsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChipsDataModel.swift; sourceTree = "<group>"; };
 		4976F540293E2B1B0061C781 /* ExampleAlignmentGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleAlignmentGuide.swift; sourceTree = "<group>"; };
+		499CCB9C2952EA9600D8B782 /* SFProText-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Bold.ttf"; sourceTree = "<group>"; };
+		499CCB9D2952EAA200D8B782 /* SFProText-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Light.ttf"; sourceTree = "<group>"; };
+		499CCB9E2952EAAA00D8B782 /* SFProText-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Medium.ttf"; sourceTree = "<group>"; };
+		499CCB9F2952EAB100D8B782 /* SFProText-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Regular.ttf"; sourceTree = "<group>"; };
+		499CCBA02952EAB700D8B782 /* SFProText-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Semibold.ttf"; sourceTree = "<group>"; };
+		499CCBA12952EABF00D8B782 /* SFProText-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Thin.ttf"; sourceTree = "<group>"; };
+		499CCBA82952EB3C00D8B782 /* Makaty-UI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Makaty-UI-Info.plist"; sourceTree = SOURCE_ROOT; };
+		499CCBA92952EBCF00D8B782 /* SFProText-Ultralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Ultralight.ttf"; sourceTree = "<group>"; };
 		49D221B329435987006B3730 /* PointLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointLabelView.swift; sourceTree = "<group>"; };
 		49D221B529435A40006B3730 /* CustomPointViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPointViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,13 +165,13 @@
 		4976F4C42938C8880061C781 /* Makaty_UI */ = {
 			isa = PBXGroup;
 			children = (
+				499CCBA82952EB3C00D8B782 /* Makaty-UI-Info.plist */,
 				4976F4C72938C8880061C781 /* ContentView.swift */,
 				4976F4C52938C8880061C781 /* Makaty_UIApp.swift */,
 				4976F4D32938CD420061C781 /* Core */,
 				4976F4FA2939F4430061C781 /* Utils */,
 				4976F4D92938CDCE0061C781 /* Ressources */,
 				4976F4D82938CDC10061C781 /* Extensions */,
-				4976F4C92938C88A0061C781 /* Assets.xcassets */,
 				4976F4CB2938C88A0061C781 /* Preview Content */,
 			);
 			path = Makaty_UI;
@@ -234,6 +249,8 @@
 		4976F4D92938CDCE0061C781 /* Ressources */ = {
 			isa = PBXGroup;
 			children = (
+				499CCB9B2952EA5000D8B782 /* fonts */,
+				4976F4C92938C88A0061C781 /* Assets.xcassets */,
 			);
 			path = Ressources;
 			sourceTree = "<group>";
@@ -483,6 +500,20 @@
 			path = AlignmentGuide;
 			sourceTree = "<group>";
 		};
+		499CCB9B2952EA5000D8B782 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				499CCBA12952EABF00D8B782 /* SFProText-Thin.ttf */,
+				499CCBA02952EAB700D8B782 /* SFProText-Semibold.ttf */,
+				499CCBA92952EBCF00D8B782 /* SFProText-Ultralight.ttf */,
+				499CCB9F2952EAB100D8B782 /* SFProText-Regular.ttf */,
+				499CCB9E2952EAAA00D8B782 /* SFProText-Medium.ttf */,
+				499CCB9D2952EAA200D8B782 /* SFProText-Light.ttf */,
+				499CCB9C2952EA9600D8B782 /* SFProText-Bold.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -549,8 +580,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				499CCBA62952EAFA00D8B782 /* SFProText-Light.ttf in Resources */,
+				499CCBAA2952EBCF00D8B782 /* SFProText-Ultralight.ttf in Resources */,
 				4976F4DC2938CFA80061C781 /* Launch Screen.storyboard in Resources */,
+				499CCBA52952EAF800D8B782 /* SFProText-Medium.ttf in Resources */,
 				4976F4CD2938C88A0061C781 /* Preview Assets.xcassets in Resources */,
+				499CCBA42952EAF600D8B782 /* SFProText-Regular.ttf in Resources */,
+				499CCBA22952EAEF00D8B782 /* SFProText-Thin.ttf in Resources */,
+				499CCBA32952EAF300D8B782 /* SFProText-Semibold.ttf in Resources */,
+				499CCBA72952EAFC00D8B782 /* SFProText-Bold.ttf in Resources */,
 				4976F4CA2938C88A0061C781 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -732,6 +770,7 @@
 				DEVELOPMENT_TEAM = 5LP3MC28Z5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Makaty-UI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
@@ -761,6 +800,7 @@
 				DEVELOPMENT_TEAM = 5LP3MC28Z5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Makaty-UI-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";

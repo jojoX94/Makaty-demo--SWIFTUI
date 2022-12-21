@@ -43,7 +43,7 @@ struct EditProfileScreen: View {
             
             VStack(alignment: .leading, spacing: 8) {
                 Text("Preferences")
-                    .font(.custom("HelveticaNeue-Light", size: 12))
+                    .font(.custom("SFProText-Light", size: 12))
                     .foregroundColor(.black.opacity(0.8))
                 
                 GeometryReader { geo in

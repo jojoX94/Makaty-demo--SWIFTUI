@@ -15,7 +15,7 @@ struct CustomPointViewRow: View {
         HStack(alignment: .top) {
             VStack(alignment: .leading) {
                 Text(model.title)
-                    .font(.custom("HelveticaNeue-Light", size: 16))
+                    .font(.custom("SFProText-Light", size: 16))
                     .foregroundColor(.black)
                 Divider()
                 VStack(alignment: .leading, spacing: 8) {
@@ -25,9 +25,9 @@ struct CustomPointViewRow: View {
             }
             VStack {
                 Text("Points")
-                    .font(.custom("HelveticaNeue-Medium", size: 16))
+                    .font(.custom("SFProText-Medium", size: 16))
                 Text( model.type == .win ? "+\(model.totalPoints)" : "-\(model.totalPoints)")
-                    .font(.custom("HelveticaNeue-Bold", size: 20))
+                    .font(.custom("SFProText-Bold", size: 20))
             }
             .foregroundColor(.white)
             .padding(10)

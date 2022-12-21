@@ -10,6 +10,6 @@ import SwiftUI
 struct TextSubTtitle: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .font(.custom("HelveticaNeue-Medium", size: 16))
+            .font(.custom("SFProText-Medium", size: 16))
     }
 }

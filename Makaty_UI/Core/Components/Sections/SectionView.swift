@@ -25,7 +25,7 @@ struct SectionView<Content, AnotherContent> : View where Content : View, Another
             HStack(spacing: 15) {
                 Image(systemName: iconName)
                 Text(title.capitalized)
-                    .font(.custom("HelveticaNeue-Medium", size: 16))
+                    .font(.custom("SFProText-Medium", size: 16))
                 Spacer()
             }
             .padding(.leading, 5)

@@ -18,9 +18,9 @@ struct CardScreen: View {
                 
                 VStack(spacing: 10) {
                     Text("Numéro Makaty")
-                        .font(.custom("HelveticaNeue-Light", size: 16))
+                        .font(.custom("SFProText-Light", size: 16))
                     Text("#415")
-                        .font(.custom("HelveticaNeue-Regular", size: 40))
+                        .font(.custom("SFProText-Regular", size: 40))
                 }
                 Spacer()
                 
@@ -28,7 +28,7 @@ struct CardScreen: View {
                     PointScreen()
                 } label: {
                     Text("VOIR MES POINTS")
-                        .font(.custom("HelveticaNeue-Light", size: 41))
+                        .font(.custom("SFProText-Light", size: 41))
                         .foregroundColor(.gray)
                 }
 

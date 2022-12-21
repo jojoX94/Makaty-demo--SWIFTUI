@@ -14,11 +14,11 @@ struct LabelView: View {
     var body: some View {
         VStack(alignment: .leading){
             Text(label)
-                .font(.custom("HelveticaNeue-Medium", size: 14))
+                .font(.custom("SFProText-Medium", size: 14))
                 .foregroundColor(.black.opacity(0.8))
                 .padding(.bottom, 4)
             Text(value)
-                .font(.custom("HelveticaNeue-Regular", size: 14))
+                .font(.custom("SFProText-Regular", size: 14))
                 .foregroundColor(.black.opacity(0.7))
             
             Divider()

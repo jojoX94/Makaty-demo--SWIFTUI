@@ -15,7 +15,7 @@ struct PointLabelView: View {
             Image(systemName: icon)
                 .font(.title3)
             Text(text)
-                .font(.custom("HelveticaNeue-Regular", size: 14))
+                .font(.custom("SFProText-Regular", size: 14))
         }
         .foregroundColor(.black.opacity(0.7))
     }

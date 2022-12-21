@@ -13,7 +13,7 @@ struct LaunchScreenWithAnim: View {
             
             VStack() {
                 Text("MAKATY")
-                    .font(.custom("HelveticaNeue-Bold", size: 40))
+                    .font(.custom("SFProText-Bold", size: 40))
                 
                 Spacer()
                 

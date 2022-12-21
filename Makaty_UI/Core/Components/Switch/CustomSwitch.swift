@@ -14,7 +14,7 @@ struct CustomSwitch: View {
     var body: some View {
         Toggle(isOn: $value) {
             Text("Recevoir des notifications pour les nouvelles offres, pour la fin d’une offre  et pour les MAJ de mon solde")
-                .font(.custom("HelveticaNeue-Light", size: 14))
+                .font(.custom("SFProText-Light", size: 14))
                 .fixedSize(horizontal: false, vertical: true)
         }
     }

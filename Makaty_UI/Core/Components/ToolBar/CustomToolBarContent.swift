@@ -14,7 +14,7 @@ struct CustomToolBarContent: ToolbarContent {
     var body: some ToolbarContent {
         ToolbarItem(placement: .navigationBarLeading) {
             Text("MAKATY")
-                .font(.custom("HelveticaNeue-Bold", size: 22))
+                .font(.custom("SFProText-Bold", size: 22))
         }
         ToolbarItem(placement: .navigationBarTrailing) {
             HStack {

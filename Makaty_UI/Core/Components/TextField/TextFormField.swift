@@ -16,10 +16,10 @@ struct TextFormField: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             Text(label)
-                .font(.custom("HelveticaNeue-Light", size: 12))
+                .font(.custom("SFProText-Light", size: 12))
                 .foregroundColor(.black.opacity(0.8))
             TextField("", text: $value)
-                .font(.custom("HelveticaNeue-Regular", size: 14))
+                .font(.custom("SFProText-Regular", size: 14))
                 .foregroundColor(.black.opacity(0.7))
                 .padding()
                 .overlay(

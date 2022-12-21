@@ -17,18 +17,18 @@ struct PointScreen: View {
             VStack {
                 VStack(spacing: 10) {
                     Text("MES POINTS")
-                        .font(.custom("HelveticaNeue-Regular", size: 14))
+                        .font(.custom("SFProText-Regular", size: 14))
                     HStack(alignment: .bottom) {
                         Text("1240")
-                            .font(.custom("HelveticaNeue-Regular", size: 30))
+                            .font(.custom("SFProText-Regular", size: 30))
                         Text("PTS")
-                            .font(.custom("HelveticaNeue-Regular", size: 18))
+                            .font(.custom("SFProText-Regular", size: 18))
                     }
                 }
                 
                 VStack(alignment: .leading, spacing: 14) {
                     Text("HISTORIQUE DES POINTS")
-                        .font(.custom("HelveticaNeue-Medium", size: 16))
+                        .font(.custom("SFProText-Medium", size: 16))
                     
                     LazyVStack(spacing: 10) {
                         ForEach(pointViewModel.pointOders.prefix(3) ) { item in

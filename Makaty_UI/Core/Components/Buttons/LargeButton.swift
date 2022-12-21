@@ -16,7 +16,7 @@ struct LargeButton: View {
                 .frame(width: 90, height: 90)
                 .foregroundColor(.gray)
             Text(label.uppercased())
-                .font(.custom("HelveticaNeue-Regular", size: 14))
+                .font(.custom("SFProText-Regular", size: 14))
                 .multilineTextAlignment(.center)
         }
         .frame(width: 172, height: 154)

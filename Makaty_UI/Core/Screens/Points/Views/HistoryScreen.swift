@@ -37,7 +37,7 @@ struct HistoryScreen: View {
             HStack(spacing: 10) {
                 ForEach(PointFilterViewModel.allCases, id: \.rawValue) { item in
                     Text(item.title)
-                        .font(.custom("HelveticaNeue-Medium", size: 14))
+                        .font(.custom("SFProText-Medium", size: 14))
                         .foregroundColor(selectedFilter == item ? .white : .black.opacity(0.5))
                         .padding(.horizontal, 16)
                         .padding(.vertical, 10)

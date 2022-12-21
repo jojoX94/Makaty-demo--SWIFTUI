@@ -18,7 +18,7 @@ struct TopNavigationBar: View {
                     backAction()
                 }
             Text(screenTitle)
-                .font(.custom("HelveticaNeue-Regular", size: 14))
+                .font(.custom("SFProText-Regular", size: 14))
             Spacer()
         }
         .padding(.bottom, 30)
