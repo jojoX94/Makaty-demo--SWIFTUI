@@ -27,17 +27,17 @@ struct PointScreen: View {
                             Text("PTS")
                                 .font(.custom("SFProText-Regular", size: 16))
                         }
-                        .padding(.bottom, 12)
+                        .padding(.bottom, 10)
                         Text("1 POINT = 100 AR")
                             .font(.custom("SFProText-Regular", size: 14))
                     }
                     
-                    VStack(alignment: .leading, spacing: 14) {
+                    VStack(alignment: .leading, spacing: 16) {
                         Text("Historique des points")
                             .font(.custom("SFProText-Bold", size: 22))
                             .foregroundColor(Color("Blue"))
                         
-                        LazyVStack(spacing: 10) {
+                        LazyVStack(spacing: 8) {
                             ForEach(pointViewModel.pointOders.prefix(3) ) { item in
                                 NavigationLink(destination: {
                                     DetailHistoryView()
@@ -72,8 +72,6 @@ struct PointScreen: View {
                 }
                 .navigationBarBackButtonHidden(true)
                 .padding()
-                .padding(.top, 40)
-                .padding(.bottom, 10)
                 .toolbar {
                     CustomToolBarContent(titleType: .image) {
                         withAnimation {

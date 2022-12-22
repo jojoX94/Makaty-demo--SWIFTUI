@@ -21,34 +21,58 @@ struct SectionView<Content, AnotherContent> : View where Content : View, Another
     }
 
     var body: some View {
-        VStack(spacing: 14) {
-            HStack(spacing: 15) {
-                Image(systemName: iconName)
+        VStack(spacing: 12) {
+            
+            HStack(spacing: 10) {
+                Image(iconName)
                 Text(title.capitalized)
-                    .font(.custom("SFProText-Medium", size: 16))
+                    .font(.custom("SFProText-Bold", size: 22))
+                    .foregroundColor(Color("Blue"))
                 Spacer()
             }
-            .padding(.leading, 5)
+            .padding(.horizontal, 16)
             
-            Divider()
+            Rectangle()
+                .frame(maxWidth: .infinity, maxHeight: 1)
+                .foregroundColor(Color("LightGray"))
             
-            VStack(spacing: 18) {
+            VStack(spacing: 8) {
                 contentView()
+                    .padding(.horizontal, 16)
             }
             
             if AnotherContent.self != EmptyView.self {
-                Divider()
-                    .foregroundColor(.black)
+                Rectangle()
+                    .frame(maxWidth: .infinity, maxHeight: 1)
+                    .foregroundColor(Color("LightGray"))
                 totalView()
+                    .padding(.horizontal, 16)
             }
             
             
         }
+        .padding(.vertical, 12)
+        .border(Color("LightGray"), width: 1)
     }
 }
 
-//struct SectionView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        SectionView()
-//    }
-//}
+struct SectionView_Previews: PreviewProvider {
+    static var previews: some View {
+        VStack(spacing: 32) {
+            SectionView(title: "Description", iconName: "ShopColorIcon") {
+                HLabel(label: "iPhone 13 pro max (x1)", value: "3 000 000 Ar")
+                HLabel(label: "Diagnostic macbook", value: "100 000 Ar")
+                HLabel(label: "Airpods (x1)", value: "150 000 Ar")
+            } totalView: {
+                HLabel(label: "Total", value: "3 250 000 Ar", labelColor: "Black", size: .medium)
+            }
+            
+            SectionView(title: "Paiement", iconName: "WalletColorIcon") {
+                HLabel(label: "Espèce", value: "3 000 000 Ar")
+                HLabel(label: "Points de fidélité", value: "250 000 Ar (250 Pts)")
+            } totalView: {}
+        }
+        .previewLayout(.sizeThatFits)
+        .padding()
+    }
+}

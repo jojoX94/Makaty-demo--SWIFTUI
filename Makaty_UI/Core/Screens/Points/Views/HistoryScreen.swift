@@ -64,7 +64,7 @@ struct HistoryScreen: View {
                     }
                 }
                 
-                ScrollView {
+                ScrollView(showsIndicators: false) {
                     LazyVStack(spacing: 10) {
                         ForEach(filteredPointOrder ) { item in
                             NavigationLink(destination: {

@@ -23,10 +23,10 @@ struct LargeButton: View {
                 Spacer()
                 VStack {
                     Text(title)
-                        .font(.custom("SFProText-Regular", size: 20))
+                        .font(.custom("SFProText-Regular", size: 16))
                         .foregroundColor(.white)
                     Text(subTitle)
-                        .font(.title)
+                        .font(.title3)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
                 }

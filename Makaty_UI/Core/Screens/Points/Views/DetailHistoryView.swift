@@ -16,7 +16,7 @@ struct DetailHistoryView: View {
                 presentationMode.wrappedValue.dismiss()
             }
             
-            VStack(spacing: 45) {
+            VStack(spacing: 16) {
                 SectionView(title: "Description", iconName: "ShopColorIcon") {
                     HLabel(label: "iPhone 13 pro max (x1)", value: "3 000 000 Ar")
                     HLabel(label: "Diagnostic macbook", value: "100 000 Ar")
@@ -30,12 +30,11 @@ struct DetailHistoryView: View {
                     HLabel(label: "Points de fidélité", value: "250 000 Ar (250 Pts)")
                 } totalView: {}
                 
-                SectionView(title: "Points de fidélité", iconName: "StarIcon") {
-                    HLabel(label: "Points consommés", value: "3 000 000 Ar", labelColor: "White")
+                SectionColoredView(title: "Points de fidélité", iconName: "StarIcon") {
+                    HLabel(label: "Points consommés", value: "-2500 PTS", labelColor: "White")
                     HLabel(label: "Points gagnés", value: "- 250 Pts", labelColor: "White")
-                    HLabel(label: "Airpods (x1)", value: "+ 500 Pts", labelColor: "White")
                 } totalView: {
-                    HLabel(label: "Total de points", value: "+ 250 Pts",  labelColor: "White", size: .medium)
+                    HLabel(label: "Total", value: "+ 250 Pts",  labelColor: "White", size: .medium)
                 }
             }
             

@@ -54,6 +54,7 @@
 		499CCBA62952EAFA00D8B782 /* SFProText-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 499CCB9D2952EAA200D8B782 /* SFProText-Light.ttf */; };
 		499CCBA72952EAFC00D8B782 /* SFProText-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 499CCB9C2952EA9600D8B782 /* SFProText-Bold.ttf */; };
 		499CCBAA2952EBCF00D8B782 /* SFProText-Ultralight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 499CCBA92952EBCF00D8B782 /* SFProText-Ultralight.ttf */; };
+		499CCBAC295480B600D8B782 /* SectionColoredView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBAB295480B600D8B782 /* SectionColoredView.swift */; };
 		49D221B429435987006B3730 /* PointLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D221B329435987006B3730 /* PointLabelView.swift */; };
 		49D221B629435A40006B3730 /* CustomPointViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D221B529435A40006B3730 /* CustomPointViewRow.swift */; };
 		49D221BB29435F92006B3730 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 49D221BA29435F92006B3730 /* FirebaseAuth */; };
@@ -111,6 +112,7 @@
 		499CCBA12952EABF00D8B782 /* SFProText-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Thin.ttf"; sourceTree = "<group>"; };
 		499CCBA82952EB3C00D8B782 /* Makaty-UI-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Makaty-UI-Info.plist"; sourceTree = SOURCE_ROOT; };
 		499CCBA92952EBCF00D8B782 /* SFProText-Ultralight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SFProText-Ultralight.ttf"; sourceTree = "<group>"; };
+		499CCBAB295480B600D8B782 /* SectionColoredView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionColoredView.swift; sourceTree = "<group>"; };
 		49D221B329435987006B3730 /* PointLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointLabelView.swift; sourceTree = "<group>"; };
 		49D221B529435A40006B3730 /* CustomPointViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPointViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +144,7 @@
 			children = (
 				493BF2872950860800E8A280 /* SectionView.swift */,
 				493BF28929508A4E00E8A280 /* HLabel.swift */,
+				499CCBAB295480B600D8B782 /* SectionColoredView.swift */,
 			);
 			path = Sections;
 			sourceTree = "<group>";
@@ -635,6 +638,7 @@
 				4976F50F293A30F80061C781 /* CustomToolBarContent.swift in Sources */,
 				4976F52C293DE4030061C781 /* TextSubTitle.swift in Sources */,
 				4976F50B293A28910061C781 /* RouterViewModel.swift in Sources */,
+				499CCBAC295480B600D8B782 /* SectionColoredView.swift in Sources */,
 				4976F536293E181C0061C781 /* EditProfileScreen.swift in Sources */,
 				4976F4EE2939CDE10061C781 /* PointModel.swift in Sources */,
 				493BF28229505F7600E8A280 /* DetailHistoryView.swift in Sources */,
