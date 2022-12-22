@@ -14,7 +14,7 @@ struct LinkLabel: View {
     var body: some View {
         Label {
             Text(title)
-                .font(.custom("SFProText-Medium", size: 14))
+                .font(.custom("SFProText-Bold", size: 14))
         } icon: {
             Image(systemName: icon)
                 .font(.title2)

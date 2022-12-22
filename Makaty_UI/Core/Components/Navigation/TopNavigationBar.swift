@@ -14,20 +14,21 @@ struct TopNavigationBar: View {
     var body: some View {
         HStack(spacing: 18) {
             Image(systemName: "chevron.backward")
+                .font(.title)
                 .onTapGesture {
                     backAction()
                 }
             Text(screenTitle)
-                .font(.custom("SFProText-Regular", size: 14))
+                .font(.custom("SFProText-Bold", size: 22))
+                .foregroundColor(Color("Black"))
             Spacer()
         }
-        .padding(.bottom, 30)
     }
 }
 
 struct TopNavigationBar_Previews: PreviewProvider {
     static var previews: some View {
-        TopNavigationBar(screenTitle: "HISTORIQUE DES POINTS") {}
+        TopNavigationBar(screenTitle: "Historique des points") {}
             .previewLayout(.sizeThatFits)
             .padding()
     }

@@ -14,11 +14,13 @@ enum SizeString {
 struct HLabel: View {
     let label: String
     let value: String
+    let labelColor: String
     let size: SizeString
     
-    init(label: String, value: String, size: SizeString = .regular) {
+    init(label: String, value: String, labelColor: String = "Gray", size: SizeString = .regular) {
         self.label = label
         self.value = value
+        self.labelColor = labelColor
         self.size = size
     }
     
@@ -28,8 +30,8 @@ struct HLabel: View {
             Spacer()
             Text(value)
         }
-        .font(.custom("SFProText-Regular", size: size == .regular ? 14 : 16))
-        .foregroundColor(size == .regular ? .black.opacity(0.4) : .black)
+        .font(.custom(size == .regular ? "SFProText-Regular" : "SFProText-Bold" , size: size == .regular ? 14 : 16))
+        .foregroundColor(Color(labelColor))
     }
 }
 
@@ -37,7 +39,7 @@ struct HLabel_Previews: PreviewProvider {
     static var previews: some View {
         VStack(spacing: 32) {
             HLabel(label: "iPhone 13 pro max (x1)", value: "3 000 000 Ar")
-            HLabel(label: "Total", value: "3 250 000 Ar", size: .medium)
+            HLabel(label: "Total", value: "3 250 000 Ar", labelColor: "Black", size: .medium)
         }
         .previewLayout(.sizeThatFits)
         .padding()

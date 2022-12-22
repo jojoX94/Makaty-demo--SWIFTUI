@@ -14,7 +14,7 @@ struct LabelView: View {
     var body: some View {
         VStack(alignment: .leading){
             Text(label)
-                .font(.custom("SFProText-Medium", size: 14))
+                .font(.custom("SFProText-Bold", size: 14))
                 .foregroundColor(.black.opacity(0.8))
                 .padding(.bottom, 4)
             Text(value)

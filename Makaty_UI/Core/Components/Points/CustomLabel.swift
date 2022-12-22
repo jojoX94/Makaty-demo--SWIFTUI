@@ -20,9 +20,9 @@ struct CustomLabel: View {
                 .font(.title2)
             VStack(alignment: .leading) {
                 Text(title)
-                    .font(.custom("SFProText-Medium", size: 14))
+                    .font(.custom("SFProText-Bold", size: 14))
                 Text(value)
-                    .font(.custom("SFProText-Medium", size: 14))
+                    .font(.custom("SFProText-Bold", size: 14))
 
             }
             .foregroundColor(.gray)

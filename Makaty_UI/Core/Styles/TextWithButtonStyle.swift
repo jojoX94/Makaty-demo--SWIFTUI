@@ -10,7 +10,7 @@ import SwiftUI
 struct TextWithButtonStyle: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .font(.custom("SFProText-Medium", size: 14))
+            .font(.custom("SFProText-Bold", size: 14))
             .padding(.vertical, 16)
             .padding(.horizontal, 24)
             .foregroundColor(.white)

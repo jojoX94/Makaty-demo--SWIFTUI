@@ -17,7 +17,7 @@ struct CustomDatePicker: View {
                 Spacer()
             }
             Text(label)
-                .font(.custom("SFProText-Medium", size: 14))
+                .font(.custom("SFProText-Bold", size: 14))
                 .foregroundColor(.black.opacity(0.8))
             DatePicker("", selection: $value, displayedComponents: .date)
                 .datePickerStyle(.compact)

@@ -15,15 +15,15 @@ struct PointScreen: View {
     var body: some View {
         NavigationStack {
             ScrollView {
-                VStack {
+                VStack(spacing: 24) {
                     VStack(spacing: 0) {
                         Text("Mes points de fidélité")
-                            .font(.custom("SFProText-Medium", size: 18))
+                            .font(.custom("SFProText-Bold", size: 18))
                             .foregroundColor(Color("Gray"))
                             .padding(.bottom, 14)
                         HStack(alignment: .center, spacing: 8) {
                             Text("1240")
-                                .font(.custom("SFProText-Medium", size: 56))
+                                .font(.custom("SFProText-Bold", size: 56))
                             Text("PTS")
                                 .font(.custom("SFProText-Regular", size: 16))
                         }
@@ -34,7 +34,7 @@ struct PointScreen: View {
                     
                     VStack(alignment: .leading, spacing: 14) {
                         Text("Historique des points")
-                            .font(.custom("SFProText-Medium", size: 22))
+                            .font(.custom("SFProText-Bold", size: 22))
                             .foregroundColor(Color("Blue"))
                         
                         LazyVStack(spacing: 10) {
@@ -64,7 +64,6 @@ struct PointScreen: View {
                         }
                     }
                     
-                   Spacer()
                     
                     VStack(spacing: 10) {
                         LargeButton(title: "Voir le catalogue", subTitle: "produits", backgroundImageName: "CatalogueImg_clean")

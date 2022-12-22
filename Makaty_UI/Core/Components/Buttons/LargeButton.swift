@@ -34,7 +34,7 @@ struct LargeButton: View {
             }
         }
         .foregroundColor(.white)
-        .frame(width: .infinity, height: 140)
+        .frame(maxWidth: .infinity, maxHeight: 143)
     }
 }
 
