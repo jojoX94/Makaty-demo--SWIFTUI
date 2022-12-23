@@ -13,29 +13,44 @@ struct CardScreen: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
-                Spacer()
-                
-                VStack(spacing: 10) {
-                    Text("Numéro Makaty")
-                        .font(.custom("SFProText-Light", size: 16))
-                    Text("#415")
-                        .font(.custom("SFProText-Regular", size: 40))
+            VStack(spacing: 16) {
+                ZStack {
+                    
+                    RoundedRectangle(cornerRadius: 16)
+                        .foregroundColor(Color("Blue"))
+                    
+                    VStack {
+                        Image("LogoWhiteMin")
+                            .padding(.top, 20)
+                        Spacer()
+                    }
+                    
+                    VStack(spacing: 16) {
+                        Text("Numéro de carte")
+                            .font(.custom("SFProText-Bold", size: 18))
+                        Text("215")
+                            .font(.custom("SFProText-Bold", size: 64))
+                    }
+                    .foregroundColor(.white)
+                    
                 }
-                Spacer()
+                .frame(maxWidth: .infinity)
+                
+                
                 
                 NavigationLink {
                     PointScreen()
                 } label: {
-                    Text("VOIR MES POINTS")
-                        .font(.custom("SFProText-Light", size: 41))
-                        .foregroundColor(.gray)
+                    LargeButton(title: "Voir", subTitle: "mes points", backgroundImageName: "PointsImg_clean")
                 }
 
 
             }
+            .padding(.top, 32)
+            .padding(.horizontal, 16)
+            .padding(.bottom, 20)
             .toolbar {
-                CustomToolBarContent(titleType: .text, title: "MA CARTE") {
+                CustomToolBarContent(titleType: .text, title: "Ma carte") {
                     withAnimation {
                         viewRouter.showMenu = true
                     }

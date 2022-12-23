@@ -78,7 +78,7 @@ struct PointScreen: View {
                             viewRouter.showMenu = true
                         }
                     }
-            }
+                }
             }
         }
     }
