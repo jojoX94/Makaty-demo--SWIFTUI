@@ -18,34 +18,34 @@ enum Page: Int, CaseIterable {
     var title: String {
         switch self {
             case .point:
-                return "MES POINTS"
+                return "Mes points de fidélité"
             case .card:
-                return "MA CARTE"
+                return "Ma carte"
             case .profile:
-                return "MON PROFIL"
+                return "Mon profil"
             case .offers:
-                return "NOS OFFRES"
+                return "Nos offres"
             case .products:
-                return "NOS PRODUITS"
+                return "Nos produits"
             case .tips:
-                return "ASTUCES MAKATY"
+                return "Nos conseils de Pro"
         }
     }
     
     var icon: String {
         switch self {
             case .point:
-                return "house"
+                return "StarColorIcon"
             case .card:
-                return "iphone.homebutton.circle"
+                return "CardColorIcon"
             case .profile:
-                return "person"
+                return "ProfilColorIcon"
             case .offers:
-                return "cart"
+                return "OfferColorIcon"
             case .products:
-                return "digitalcrown.arrow.counterclockwise"
+                return "ShopColorIcon"
             case .tips:
-                return "pencil.tip.crop.circle"
+                return "TipColorIcon"
         }
     }
 }

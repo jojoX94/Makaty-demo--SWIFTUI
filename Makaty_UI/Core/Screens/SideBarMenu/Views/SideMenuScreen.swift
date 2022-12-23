@@ -15,52 +15,63 @@ struct SideMenuScreen: View {
     @Namespace private var namespace
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 40) {
-            HStack {
-                Spacer()
-                Image(systemName: "xmark")
-                    .font(.title)
-                    .onTapGesture {
-                        withAnimation {
-                            viewRouter.showMenu = false
-                        }
-                    }
-                    .padding(.leading, UIScreen.main.bounds.width * (1/3))
-                Spacer()
-
-            }
-            
-            VStack(alignment: .leading) {
-                ForEach(Page.allCases, id:\.rawValue) { item in
-                    LinkLabel(icon: item.icon, title: item.title)
-                        .foregroundColor(selectedMenu == item ? .white : .black)
-                        .background(
-                            ZStack {
-                                if selectedMenu == item {
-                                    Color.blue
-                                        .matchedGeometryEffect(id: "menu", in: namespace)
+        VStack {
+            VStack(alignment: .leading, spacing: 58) {
+                VStack(spacing: 34) {
+                    HStack {
+                        Spacer()
+                        Image(systemName: "xmark")
+                            .font(.title)
+                            .onTapGesture {
+                                withAnimation {
+                                    viewRouter.showMenu = false
                                 }
                             }
-                        )
-                        .onTapGesture {
-                            withAnimation {
-                                selectedMenu = item
+                    }
+                    
+                    Image("LogoFull")
+                }
+                
+                VStack(alignment: .leading) {
+                    ForEach(Page.allCases, id:\.rawValue) { item in
+                        LinkLabel(icon: item.icon, title: item.title)
+                            .foregroundColor(selectedMenu == item ? .white : .black)
+                            .background(
+                                ZStack {
+                                    if selectedMenu == item {
+                                        Color.blue
+                                            .matchedGeometryEffect(id: "menu", in: namespace)
+                                    }
+                                }
+                            )
+                            .onTapGesture {
+                                withAnimation {
+                                    selectedMenu = item
+                                }
+                                viewRouter.currentPage = item
+                                
                             }
-                            viewRouter.currentPage = item
-                            
-                        }
+                    }
                 }
             }
             
-            
             Spacer()
+            
+            HStack(spacing: 16) {
+                Link(destination: URL(string: "http://www.makaty.mg/")!) {
+                    OutlinedLabel(label: "MAKATY", iconName: "ArrowRightIcon")
+                }
+                
+                Link(destination: URL(string: "https://www.facebook.com/MakatyFB/")!) {
+                    IconLabel(iconName: "FacebookIcon")
+                }
+            }
+            
         }
-        .padding(.top, 40)
-        .padding(.leading, 30)
-        .padding(.trailing, 22)
-        .background(
-            Color.gray
-        )
+        .padding(.top, 28)
+        .padding(.horizontal, 18)
+        .padding(.bottom, 40)
+        .background(.white)
     }
 }
 

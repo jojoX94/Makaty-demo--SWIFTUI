@@ -14,10 +14,12 @@ struct LinkLabel: View {
     var body: some View {
         Label {
             Text(title)
-                .font(.custom("SFProText-Bold", size: 14))
+                .font(.custom("SFProText-Regular", size: 18))
+                .foregroundColor(Color("Gray"))
+                .padding(.leading, 18)
         } icon: {
-            Image(systemName: icon)
-                .font(.title2)
+            Image(icon)
+                .frame(width: 27, height: 27)
         }
         .padding(.horizontal, 16)
         .padding(.vertical, 10)
@@ -27,6 +29,9 @@ struct LinkLabel: View {
 
 struct LinkLabel_Previews: PreviewProvider {
     static var previews: some View {
-        LinkLabel(icon: "house", title: "Home")
+        LinkLabel(icon: "StarColorIcon", title: "Home")
+            .padding()
+            .previewLayout(.sizeThatFits)
+            
     }
 }

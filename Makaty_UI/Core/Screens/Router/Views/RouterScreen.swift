@@ -18,7 +18,7 @@ struct RouterScreen: View {
             
             CurrentScreen()
                 .rotation3DEffect(.init(degrees: viewRouter.showMenu ? -15 : 0), axis: (x: 0, y: 1, z: 0), anchor: .trailing)
-                .offset(x: viewRouter.showMenu ? 300 : 0)
+                .offset(x: viewRouter.showMenu ? 500 : 0)
         }
         .environmentObject(viewRouter)
     }
