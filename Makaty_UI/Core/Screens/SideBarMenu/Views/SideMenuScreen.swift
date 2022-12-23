@@ -32,7 +32,7 @@ struct SideMenuScreen: View {
                     Image("LogoFull")
                 }
                 
-                VStack(alignment: .leading) {
+                VStack(alignment: .leading, spacing: 20) {
                     ForEach(Page.allCases, id:\.rawValue) { item in
                         LinkLabel(icon: item.icon, title: item.title)
                             .foregroundColor(selectedMenu == item ? .white : .black)

@@ -40,7 +40,7 @@ struct DetailHistoryView: View {
             
             Spacer()
         }
-        .padding()
+        .padding(.horizontal)
         .navigationBarHidden(true)
     }
 }

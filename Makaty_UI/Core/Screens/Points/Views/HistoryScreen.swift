@@ -38,7 +38,7 @@ struct HistoryScreen: View {
                 HStack(spacing: 10) {
                     ForEach(PointFilterViewModel.allCases, id: \.rawValue) { item in
                         Text(item.title)
-                            .font(.custom("SFProText-REegular", size: 14))
+                            .font(.custom("SFProText-Regular", size: 14))
                             .foregroundColor(selectedFilter == item ? .white : Color("Gray"))
                             .padding(.horizontal, 16)
                             .padding(.vertical, 10)
@@ -65,7 +65,7 @@ struct HistoryScreen: View {
                 }
                 
                 ScrollView(showsIndicators: false) {
-                    LazyVStack(spacing: 10) {
+                    LazyVStack(spacing: 8) {
                         ForEach(filteredPointOrder ) { item in
                             NavigationLink(destination: {
                                 DetailHistoryView()
@@ -79,7 +79,7 @@ struct HistoryScreen: View {
             
 
         }
-        .padding()
+        .padding(.horizontal)
         .navigationBarBackButtonHidden(true)
     }
 }

@@ -23,7 +23,7 @@ struct ProfileScreen: View {
                             .padding(.horizontal, 16)
                         
 
-                        VStack(spacing: 10) {
+                        VStack(spacing: 0) {
                             VStack(spacing: 0) {
                                 LabelView(label: "Nom", value: "$name")
                                 LabelView(label: "Prénom", value: "$username")

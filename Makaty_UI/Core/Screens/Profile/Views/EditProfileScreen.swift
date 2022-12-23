@@ -31,55 +31,54 @@ struct EditProfileScreen: View {
         var height = CGFloat.zero
         
         VStack {
-            TopNavigationBar(screenTitle: "EDITER VOTRE PROFILS") {
+            TopNavigationBar(screenTitle: "Edition profil") {
                 presentationMode.wrappedValue.dismiss()
             }
             
-            TextFormField(label: "Nom", value: $name)
-            TextFormField(label: "PRENOM", value: $username)
-            TextFormField(label: "CIVILITE", value: $civility)
-            TextFormField(label: "ADRESSE", value: $address)
-            TextFormField(label: "EMAIL", value: $email)
-            
-            VStack(alignment: .leading, spacing: 8) {
-                Text("Preferences")
-                    .font(.custom("SFProText-Light", size: 12))
-                    .foregroundColor(.black.opacity(0.8))
+            VStack(spacing: 16) {
+                TextFormField(label: "Nom", value: $name)
+                TextFormField(label: "PRENOM", value: $username)
+                TextFormField(label: "CIVILITE", value: $civility)
+                TextFormField(label: "ADRESSE", value: $address)
+                TextFormField(label: "EMAIL", value: $email)
                 
-                GeometryReader { geo in
-                    ZStack(alignment: .topLeading, content: {
-                    ForEach(listChips) { chipsData in
-                        Chips(title: chipsData.title,
-                              isSelected: chipsData.isSelected)
-                            .padding(.all, 5)
-                            .alignmentGuide(.leading) { dimension in
-                                if (abs(width - dimension.width) > geo.size.width) {
-                                    width = 0
-                                    height -= dimension.height
+                VStack(alignment: .leading, spacing: 8) {
+                    Text("Preferences")
+                        .font(.custom("SFProText-Light", size: 12))
+                        .foregroundColor(.black.opacity(0.8))
+                    
+                    GeometryReader { geo in
+                        ZStack(alignment: .topLeading, content: {
+                        ForEach(listChips) { chipsData in
+                            Chips(title: chipsData.title,
+                                  isSelected: chipsData.isSelected)
+                                .padding(.all, 5)
+                                .alignmentGuide(.leading) { dimension in
+                                    if (abs(width - dimension.width) > geo.size.width) {
+                                        width = 0
+                                        height -= dimension.height
+                                    }
+                                    
+                                    let result = width
+                                    if chipsData.id == listChips.last!.id {
+                                        width = 0
+                                    } else {
+                                        width -= dimension.width
+                                    }
+                                    return result
+                                  }
+                                .alignmentGuide(.top) { dimension in
+                                    let result = height
+                                    if chipsData.id == listChips.last!.id {
+                                        height = 0
+                                    }
+                                    return result
                                 }
-                                
-                                let result = width
-                                if chipsData.id == listChips.last!.id {
-                                    width = 0
-                                } else {
-                                    width -= dimension.width
-                                }
-                                return result
-                              }
-                            .alignmentGuide(.top) { dimension in
-                                let result = height
-                                if chipsData.id == listChips.last!.id {
-                                    height = 0
-                                }
-                                return result
                             }
-                        }
-                    })
+                        })
+                    }
                 }
             }
-            
-            
-            
             
             Button {
                 
@@ -92,6 +91,7 @@ struct EditProfileScreen: View {
         }
         .padding(.top, 30)
         .padding(.horizontal, 16)
+        .navigationBarBackButtonHidden(true)
             
     }
 }

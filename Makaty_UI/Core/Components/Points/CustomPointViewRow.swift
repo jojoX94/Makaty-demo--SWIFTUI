@@ -33,13 +33,15 @@ struct CustomPointViewRow: View {
                     .font(.custom("SFProText-Bold", size: 22))
             }
             .foregroundColor(.white)
-            .padding(10)
+            .padding(.vertical, 8)
+            .padding(.horizontal, 14)
             .background(
                 model.type == .win ? Color("Green") : Color("Red")
             )
         }
-        .padding(.vertical, 14)
-        .padding(.horizontal, 18)
+        .padding(.top, 16)
+        .padding(.horizontal, 16)
+        .padding(.bottom, 14)
         .border(Color("Gray").opacity(0.3), width: 1)
 
     }
