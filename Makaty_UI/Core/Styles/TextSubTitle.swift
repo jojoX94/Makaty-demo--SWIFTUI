@@ -10,6 +10,7 @@ import SwiftUI
 struct TextSubTtitle: ViewModifier {
     func body(content: Content) -> some View {
         content
-            .font(.custom("SFProText-Bold", size: 16))
+            .font(.custom("SFProText-Bold", size: 22))
+            .foregroundColor(Color("Blue"))
     }
 }

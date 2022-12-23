@@ -36,8 +36,6 @@ struct CardScreen: View {
                 }
                 .frame(maxWidth: .infinity)
                 
-                
-                
                 NavigationLink {
                     PointScreen()
                 } label: {

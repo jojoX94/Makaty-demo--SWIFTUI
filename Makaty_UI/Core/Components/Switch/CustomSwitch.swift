@@ -16,7 +16,9 @@ struct CustomSwitch: View {
             Text("Recevoir des notifications pour les nouvelles offres, pour la fin d’une offre  et pour les MAJ de mon solde")
                 .font(.custom("SFProText-Light", size: 14))
                 .fixedSize(horizontal: false, vertical: true)
+                .padding(.trailing, 80)
         }
+        .tint(Color("Blue"))
     }
 }
 
