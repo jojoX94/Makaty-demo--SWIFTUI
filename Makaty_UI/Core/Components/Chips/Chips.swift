@@ -13,18 +13,19 @@ struct Chips: View {
     
     var body: some View {
         Text(title)
-            .font(.title3)
+            .font(.custom("SFProText-Regular", size: 14))
             .lineLimit(1)
-            .padding(.all, 10)
-            .foregroundColor(isSelected ? .white : .blue)
-            .background(isSelected ? Color.blue : Color.white) //different UI for selected and not selected view
-            .cornerRadius(40)  //rounded Corner
+            .padding(.vertical, 12)
+            .padding(.horizontal, 20)
+            .foregroundColor(isSelected ? .white : Color("Gray"))
+            .background(isSelected ? Color("Blue") : .white)
+            .cornerRadius(30)
             .overlay(
-                    RoundedRectangle(cornerRadius: 40)
-                        .stroke(Color.blue, lineWidth: 1.5)
+                    RoundedRectangle(cornerRadius: 30)
+                        .stroke(isSelected ? .clear : Color("Gray"), lineWidth: 1)
             
             ).onTapGesture {
-                isSelected.toggle() // toggle select - not selected
+                isSelected.toggle()
             }
         
     }

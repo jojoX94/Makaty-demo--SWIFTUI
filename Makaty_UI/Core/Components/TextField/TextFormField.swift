@@ -14,17 +14,17 @@ struct TextFormField: View {
     
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 8) {
+        VStack(alignment: .leading, spacing: 5) {
             Text(label)
-                .font(.custom("SFProText-Light", size: 12))
-                .foregroundColor(.black.opacity(0.8))
+                .font(.custom("SFProText-Bold", size: 16))
+                .foregroundColor(Color("Black"))
             TextField("", text: $value)
-                .font(.custom("SFProText-Regular", size: 14))
-                .foregroundColor(.black.opacity(0.7))
+                .font(.custom("SFProText-Regular", size: 16))
+                .foregroundColor(Color(hex: "#272F3C"))
                 .padding()
                 .overlay(
                     RoundedRectangle(cornerRadius: 4)
-                        .stroke(Color.gray, lineWidth: 1)
+                        .stroke(Color("LightGray"), lineWidth: 1)
                 )
         }
     }
@@ -32,7 +32,7 @@ struct TextFormField: View {
 
 struct TextFormField_Previews: PreviewProvider {
     static var previews: some View {
-        TextFormField(label: "Nom", value: .constant(""))
+        TextFormField(label: "Nom", value: .constant("Rakotomalala"))
             .previewLayout(.sizeThatFits)
             .padding()
     }

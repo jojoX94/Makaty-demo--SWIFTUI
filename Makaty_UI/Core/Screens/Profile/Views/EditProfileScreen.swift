@@ -11,7 +11,7 @@ struct EditProfileScreen: View {
     
     @State var name: String = ""
     @State var username: String = ""
-    @State var civility: String = ""
+    @State var phoneNumber: String = ""
     @State var address: String = ""
     @State var email: String = ""
     @State var preference: String = ""
@@ -30,66 +30,72 @@ struct EditProfileScreen: View {
         var width = CGFloat.zero
         var height = CGFloat.zero
         
-        VStack {
+        VStack(spacing: 30) {
             TopNavigationBar(screenTitle: "Edition profil") {
                 presentationMode.wrappedValue.dismiss()
             }
             
-            VStack(spacing: 16) {
-                TextFormField(label: "Nom", value: $name)
-                TextFormField(label: "PRENOM", value: $username)
-                TextFormField(label: "CIVILITE", value: $civility)
-                TextFormField(label: "ADRESSE", value: $address)
-                TextFormField(label: "EMAIL", value: $email)
-                
-                VStack(alignment: .leading, spacing: 8) {
-                    Text("Preferences")
-                        .font(.custom("SFProText-Light", size: 12))
-                        .foregroundColor(.black.opacity(0.8))
+            VStack(spacing: 32) {
+                VStack(spacing: 16) {
+                    TextFormField(label: "Nom", value: $name)
+                    TextFormField(label: "Prénom", value: $username)
+                    TextFormField(label: "Téléphone", value: $phoneNumber)
+                    TextFormField(label: "Email", value: $address)
+                    TextFormField(label: "Adresse", value: $email)
                     
-                    GeometryReader { geo in
-                        ZStack(alignment: .topLeading, content: {
-                        ForEach(listChips) { chipsData in
-                            Chips(title: chipsData.title,
-                                  isSelected: chipsData.isSelected)
-                                .padding(.all, 5)
-                                .alignmentGuide(.leading) { dimension in
-                                    if (abs(width - dimension.width) > geo.size.width) {
-                                        width = 0
-                                        height -= dimension.height
+                    VStack(alignment: .leading, spacing: 6) {
+                        Text("Préférence en produit Apple")
+                            .font(.custom("SFProText-Bold", size: 16))
+                            .foregroundColor(Color("Black"))
+                        
+                        GeometryReader { geo in
+                            ZStack(alignment: .topLeading, content: {
+                                ForEach(listChips) { chipsData in
+                                    Chips(title: chipsData.title,
+                                          isSelected: chipsData.isSelected)
+                                        .padding(.all, 5)
+                                        .alignmentGuide(.leading) { dimension in
+                                            if (abs(width - dimension.width) > geo.size.width) {
+                                                width = 0
+                                                height -= dimension.height
+                                            }
+                                            
+                                            let result = width
+                                            if chipsData.id == listChips.last!.id {
+                                                width = 0
+                                            } else {
+                                                width -= dimension.width
+                                            }
+                                            return result
+                                          }
+                                        .alignmentGuide(.top) { dimension in
+                                            let result = height
+                                            if chipsData.id == listChips.last!.id {
+                                                height = 0
+                                            }
+                                            return result
+                                        }
                                     }
-                                    
-                                    let result = width
-                                    if chipsData.id == listChips.last!.id {
-                                        width = 0
-                                    } else {
-                                        width -= dimension.width
-                                    }
-                                    return result
-                                  }
-                                .alignmentGuide(.top) { dimension in
-                                    let result = height
-                                    if chipsData.id == listChips.last!.id {
-                                        height = 0
-                                    }
-                                    return result
-                                }
-                            }
-                        })
+                            })
+                        }
+                        
                     }
                 }
-            }
-            
-            Button {
+
                 
-            } label: {
-                Text("Enregistrer modifications")
-                    .textwithButtonStyle()
+                Button {
+                    
+                } label: {
+                    Text("Enregistrer modifications")
+                        .textwithButtonStyle()
+                }
+                
+                Spacer()
             }
             
-            Spacer()
+
         }
-        .padding(.top, 30)
+        
         .padding(.horizontal, 16)
         .navigationBarBackButtonHidden(true)
             
