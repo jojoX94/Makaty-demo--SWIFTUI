@@ -17,6 +17,8 @@ struct EditProfileScreen: View {
     @State var preference: String = ""
     @State var date: Date = Date()
     
+    @State private var totalHeight = CGFloat(100)
+    
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     @State var listChips: [ChipsDataModel] = [
@@ -48,37 +50,45 @@ struct EditProfileScreen: View {
                             .font(.custom("SFProText-Bold", size: 16))
                             .foregroundColor(Color("Black"))
                         
-                        GeometryReader { geo in
-                            ZStack(alignment: .topLeading, content: {
-                                ForEach(listChips) { chipsData in
-                                    Chips(title: chipsData.title,
-                                          isSelected: chipsData.isSelected)
-                                        .padding(.all, 5)
-                                        .alignmentGuide(.leading) { dimension in
-                                            if (abs(width - dimension.width) > geo.size.width) {
-                                                width = 0
-                                                height -= dimension.height
+                        VStack(spacing: 0) {
+                            GeometryReader { geo in
+                                ZStack(alignment: .topLeading, content: {
+                                    ForEach(listChips) { chipsData in
+                                        Chips(title: chipsData.title,
+                                              isSelected: chipsData.isSelected)
+                                            .padding(.all, 5)
+                                            .alignmentGuide(.leading) { dimension in
+                                                if (abs(width - dimension.width) > geo.size.width) {
+                                                    width = 0
+                                                    height -= dimension.height
+                                                }
+                                                
+                                                let result = width
+                                                if chipsData.id == listChips.last!.id {
+                                                    width = 0
+                                                } else {
+                                                    width -= dimension.width
+                                                }
+                                                return result
+                                              }
+                                            .alignmentGuide(.top) { dimension in
+                                                let result = height
+                                                if chipsData.id == listChips.last!.id {
+                                                    height = 0
+                                                }
+                                                return result
                                             }
-                                            
-                                            let result = width
-                                            if chipsData.id == listChips.last!.id {
-                                                width = 0
-                                            } else {
-                                                width -= dimension.width
-                                            }
-                                            return result
-                                          }
-                                        .alignmentGuide(.top) { dimension in
-                                            let result = height
-                                            if chipsData.id == listChips.last!.id {
-                                                height = 0
-                                            }
-                                            return result
                                         }
+                                })
+                                .background(GeometryReader {gp -> Color in
+                                    DispatchQueue.main.async {
+                                        self.totalHeight = gp.size.height
                                     }
-                            })
+                                    return Color.clear
+                                })
+                            }
                         }
-                        
+                        .frame(height: totalHeight)
                     }
                 }
 
@@ -89,13 +99,9 @@ struct EditProfileScreen: View {
                     Text("Enregistrer modifications")
                         .textwithButtonStyle()
                 }
-                
                 Spacer()
             }
-            
-
         }
-        
         .padding(.horizontal, 16)
         .navigationBarBackButtonHidden(true)
             

@@ -58,6 +58,7 @@
 		499CCBB729557D5700D8B782 /* OutlinedLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBB629557D5700D8B782 /* OutlinedLabel.swift */; };
 		499CCBB929557E9E00D8B782 /* IconLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBB829557E9E00D8B782 /* IconLabel.swift */; };
 		499CCBBB2955D02E00D8B782 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBBA2955D02E00D8B782 /* Color+Extensions.swift */; };
+		499CCBBE29596B6E00D8B782 /* ProblematicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBBD29596B6E00D8B782 /* ProblematicView.swift */; };
 		49D221B429435987006B3730 /* PointLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D221B329435987006B3730 /* PointLabelView.swift */; };
 		49D221B629435A40006B3730 /* CustomPointViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D221B529435A40006B3730 /* CustomPointViewRow.swift */; };
 		49D221BB29435F92006B3730 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 49D221BA29435F92006B3730 /* FirebaseAuth */; };
@@ -119,6 +120,7 @@
 		499CCBB629557D5700D8B782 /* OutlinedLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OutlinedLabel.swift; sourceTree = "<group>"; };
 		499CCBB829557E9E00D8B782 /* IconLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconLabel.swift; sourceTree = "<group>"; };
 		499CCBBA2955D02E00D8B782 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		499CCBBD29596B6E00D8B782 /* ProblematicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblematicView.swift; sourceTree = "<group>"; };
 		49D221B329435987006B3730 /* PointLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointLabelView.swift; sourceTree = "<group>"; };
 		49D221B529435A40006B3730 /* CustomPointViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPointViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -221,6 +223,7 @@
 		4976F4D62938CD980061C781 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				499CCBBC29596B5000D8B782 /* ProblematicView */,
 				493BF2862950848F00E8A280 /* Sections */,
 				493BF2832950602200E8A280 /* Navigation */,
 				4976F53F293E2B040061C781 /* AlignmentGuide */,
@@ -526,6 +529,14 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
+		499CCBBC29596B5000D8B782 /* ProblematicView */ = {
+			isa = PBXGroup;
+			children = (
+				499CCBBD29596B6E00D8B782 /* ProblematicView.swift */,
+			);
+			path = ProblematicView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -629,6 +640,7 @@
 				4976F507293A14A50061C781 /* LinkLabel.swift in Sources */,
 				4976F4F32939D7C80061C781 /* PointFilterViewModel.swift in Sources */,
 				493BF2852950604100E8A280 /* TopNavigationBar.swift in Sources */,
+				499CCBBE29596B6E00D8B782 /* ProblematicView.swift in Sources */,
 				4976F51E293DC33E0061C781 /* TextFormField.swift in Sources */,
 				4976F5012939FE430061C781 /* SideMenuScreen.swift in Sources */,
 				4976F52F293DE5600061C781 /* CustomSwitch.swift in Sources */,
