@@ -103,7 +103,7 @@ struct EditProfileScreen: View {
             }
         }
         .padding(.horizontal, 16)
-        .navigationBarBackButtonHidden(true)
+        .navigationBarBackButtonHidden()
             
     }
 }

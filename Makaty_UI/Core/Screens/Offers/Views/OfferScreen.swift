@@ -18,7 +18,12 @@ struct OfferScreen: View {
                 VStack {
                     LazyVStack {
                         ForEach(offerVM.offers) { offer in
-                            OfferView(model: offer)
+                            NavigationLink {
+                                ProductsScreen()
+                            } label: {
+                                OfferView(model: offer)
+                            }
+
                         }
                     }
                     Spacer()

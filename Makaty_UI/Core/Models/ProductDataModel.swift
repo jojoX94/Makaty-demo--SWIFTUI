@@ -14,4 +14,6 @@ struct ProductDataModel: Identifiable {
     var modality: String
     var pointsByPayInCash: String
     var pointsByPayInCredit: String
+    var costByPayInCash: String
+    var costByPayInCredit: String
 }
