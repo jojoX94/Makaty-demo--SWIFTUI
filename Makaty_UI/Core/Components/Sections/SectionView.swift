@@ -26,7 +26,7 @@ struct SectionView<Content, AnotherContent> : View where Content : View, Another
             HStack(spacing: 10) {
                 Image(iconName)
                 Text(title.capitalized)
-                    .font(.custom("SFProText-Bold", size: 22))
+                    .textSubtitleStyle()
                     .foregroundColor(Color("Blue"))
                 Spacer()
             }

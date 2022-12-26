@@ -20,6 +20,7 @@ struct ProfileScreen: View {
                     VStack(alignment: .leading, spacing: 28) {
                         Text("Informations personnelles")
                             .textSubtitleStyle()
+                            .foregroundColor(Color("Blue"))
                             .padding(.horizontal, 16)
                         
 
@@ -49,6 +50,7 @@ struct ProfileScreen: View {
                     VStack(alignment: .leading, spacing: 16) {
                         Text("Notifications")
                             .textSubtitleStyle()
+                            .foregroundColor(Color("Blue"))
                         CustomSwitch(label: "Recevoir des notifications pour les nouvelles offres, pour la fin d’une offre  et pour les MAJ de mon solde", value: $receiveNotif)
                     }
                     .padding(.horizontal, 16)

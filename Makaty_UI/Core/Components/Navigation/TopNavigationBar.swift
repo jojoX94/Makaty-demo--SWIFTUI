@@ -19,7 +19,7 @@ struct TopNavigationBar: View {
                     backAction()
                 }
             Text(screenTitle)
-                .font(.custom("SFProText-Bold", size: 22))
+                .textSubtitleStyle()
                 .foregroundColor(Color("Black"))
             Spacer()
         }

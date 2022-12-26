@@ -25,7 +25,7 @@ struct PointScreen: View {
                             Text("1240")
                                 .font(.custom("SFProText-Bold", size: 56))
                             Text("PTS")
-                                .font(.custom("SFProText-Regular", size: 16))
+                                .textBody()
                         }
                         .padding(.bottom, 10)
                         Text("1 POINT = 100 AR")
@@ -34,7 +34,7 @@ struct PointScreen: View {
                     
                     VStack(alignment: .leading, spacing: 16) {
                         Text("Historique des points")
-                            .font(.custom("SFProText-Bold", size: 22))
+                            .textSubtitleStyle()
                             .foregroundColor(Color("Blue"))
                         
                         LazyVStack(spacing: 8) {

@@ -22,7 +22,7 @@ struct UserNotActivedScreen: View {
                         Text("Compte visiteur")
                             .textSubtitleStyle()
                         Text("Morbi euismod nec dolor elementum quis. Integer sit donec eget sed nam nullam. Diam ac turpis diam tempus blandit mi.")
-                            .font(.custom("SFProText-Regular", size: 16))
+                            .textBody()
                             .foregroundColor(Color("Gray"))
                             .multilineTextAlignment(.center)
                     }

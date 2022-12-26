@@ -28,7 +28,7 @@ struct CustomToolBarContent: ToolbarContent {
         ToolbarItem(placement: .navigationBarLeading) {
             if titleType == .text {
                 Text(title)
-                    .font(.custom("SFProText-Bold", size: 22))
+                    .textSubtitleStyle()
             } else {
                 Image("LogoMin")
                     .renderingMode(.original)

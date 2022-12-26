@@ -47,7 +47,7 @@ struct EditProfileScreen: View {
                     
                     VStack(alignment: .leading, spacing: 6) {
                         Text("Préférence en produit Apple")
-                            .font(.custom("SFProText-Bold", size: 16))
+                            .textSubtitleStyle2()
                             .foregroundColor(Color("Black"))
                         
                         VStack(spacing: 0) {

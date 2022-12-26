@@ -18,7 +18,7 @@ struct LabelView: View {
                     .font(.custom("SFProText-Bold", size: 14))
                     .foregroundColor(Color("Black"))
                 Text(value)
-                    .font(.custom("SFProText-Regular", size: 16))
+                    .textBody()
                     .foregroundColor(Color("Gray"))
             }
             .padding(.horizontal, 16)
