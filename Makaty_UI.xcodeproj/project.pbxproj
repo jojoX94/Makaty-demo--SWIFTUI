@@ -39,7 +39,7 @@
 		4976F523293DD22F0061C781 /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F522293DD22F0061C781 /* CustomDatePicker.swift */; };
 		4976F527293DE0EE0061C781 /* TextWithButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F526293DE0EE0061C781 /* TextWithButtonStyle.swift */; };
 		4976F529293DE19C0061C781 /* View+TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F528293DE19B0061C781 /* View+TextStyle.swift */; };
-		4976F52C293DE4030061C781 /* TextSubTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F52B293DE4030061C781 /* TextSubTitle.swift */; };
+		4976F52C293DE4030061C781 /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F52B293DE4030061C781 /* TextStyle.swift */; };
 		4976F52F293DE5600061C781 /* CustomSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F52E293DE5600061C781 /* CustomSwitch.swift */; };
 		4976F534293DF0160061C781 /* LabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F533293DF0160061C781 /* LabelView.swift */; };
 		4976F536293E181C0061C781 /* EditProfileScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F535293E181C0061C781 /* EditProfileScreen.swift */; };
@@ -60,6 +60,10 @@
 		499CCBBB2955D02E00D8B782 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBBA2955D02E00D8B782 /* Color+Extensions.swift */; };
 		499CCBBE29596B6E00D8B782 /* ProblematicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBBD29596B6E00D8B782 /* ProblematicView.swift */; };
 		499CCBC02959791000D8B782 /* UserNotActivedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBBF2959790F00D8B782 /* UserNotActivedScreen.swift */; };
+		499CCBC529597E7E00D8B782 /* OfferViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBC429597E7E00D8B782 /* OfferViewModel.swift */; };
+		499CCBC829597F1900D8B782 /* OfferDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBC729597F1900D8B782 /* OfferDataModel.swift */; };
+		499CCBCC295981EE00D8B782 /* OfferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBCB295981EE00D8B782 /* OfferView.swift */; };
+		499CCBCE2959A37C00D8B782 /* OfferScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBCD2959A37C00D8B782 /* OfferScreen.swift */; };
 		49D221B429435987006B3730 /* PointLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D221B329435987006B3730 /* PointLabelView.swift */; };
 		49D221B629435A40006B3730 /* CustomPointViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D221B529435A40006B3730 /* CustomPointViewRow.swift */; };
 		49D221BB29435F92006B3730 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 49D221BA29435F92006B3730 /* FirebaseAuth */; };
@@ -101,7 +105,7 @@
 		4976F522293DD22F0061C781 /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
 		4976F526293DE0EE0061C781 /* TextWithButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextWithButtonStyle.swift; sourceTree = "<group>"; };
 		4976F528293DE19B0061C781 /* View+TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+TextStyle.swift"; sourceTree = "<group>"; };
-		4976F52B293DE4030061C781 /* TextSubTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextSubTitle.swift; sourceTree = "<group>"; };
+		4976F52B293DE4030061C781 /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
 		4976F52E293DE5600061C781 /* CustomSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwitch.swift; sourceTree = "<group>"; };
 		4976F533293DF0160061C781 /* LabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelView.swift; sourceTree = "<group>"; };
 		4976F535293E181C0061C781 /* EditProfileScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileScreen.swift; sourceTree = "<group>"; };
@@ -123,6 +127,10 @@
 		499CCBBA2955D02E00D8B782 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		499CCBBD29596B6E00D8B782 /* ProblematicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblematicView.swift; sourceTree = "<group>"; };
 		499CCBBF2959790F00D8B782 /* UserNotActivedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotActivedScreen.swift; sourceTree = "<group>"; };
+		499CCBC429597E7E00D8B782 /* OfferViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferViewModel.swift; sourceTree = "<group>"; };
+		499CCBC729597F1900D8B782 /* OfferDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDataModel.swift; sourceTree = "<group>"; };
+		499CCBCB295981EE00D8B782 /* OfferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferView.swift; sourceTree = "<group>"; };
+		499CCBCD2959A37C00D8B782 /* OfferScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferScreen.swift; sourceTree = "<group>"; };
 		49D221B329435987006B3730 /* PointLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointLabelView.swift; sourceTree = "<group>"; };
 		49D221B529435A40006B3730 /* CustomPointViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPointViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -218,6 +226,7 @@
 				4976F4DF2938DE250061C781 /* Points */,
 				4976F4F62939F33F0061C781 /* Card */,
 				4976F515293A39950061C781 /* Profile */,
+				499CCBC129597E1F00D8B782 /* Offers */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -304,6 +313,7 @@
 				4976F4E42938E1150061C781 /* LargeButton.swift */,
 				499CCBB629557D5700D8B782 /* OutlinedLabel.swift */,
 				499CCBB829557E9E00D8B782 /* IconLabel.swift */,
+				499CCBCB295981EE00D8B782 /* OfferView.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -321,6 +331,7 @@
 		4976F4EB2939CDB20061C781 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				499CCBC629597EF200D8B782 /* Offers */,
 				4976F4EC2939CDC20061C781 /* Point */,
 				4976F53C293E1C8F0061C781 /* ChipsDataModel.swift */,
 				493BF27F29505CD000E8A280 /* ProductDataModel.swift */,
@@ -479,7 +490,7 @@
 			isa = PBXGroup;
 			children = (
 				4976F526293DE0EE0061C781 /* TextWithButtonStyle.swift */,
-				4976F52B293DE4030061C781 /* TextSubTitle.swift */,
+				4976F52B293DE4030061C781 /* TextStyle.swift */,
 			);
 			path = Styles;
 			sourceTree = "<group>";
@@ -538,6 +549,39 @@
 				499CCBBD29596B6E00D8B782 /* ProblematicView.swift */,
 			);
 			path = ProblematicView;
+			sourceTree = "<group>";
+		};
+		499CCBC129597E1F00D8B782 /* Offers */ = {
+			isa = PBXGroup;
+			children = (
+				499CCBC329597E4100D8B782 /* ViewModels */,
+				499CCBC229597E3B00D8B782 /* Views */,
+			);
+			path = Offers;
+			sourceTree = "<group>";
+		};
+		499CCBC229597E3B00D8B782 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				499CCBCD2959A37C00D8B782 /* OfferScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		499CCBC329597E4100D8B782 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				499CCBC429597E7E00D8B782 /* OfferViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		499CCBC629597EF200D8B782 /* Offers */ = {
+			isa = PBXGroup;
+			children = (
+				499CCBC729597F1900D8B782 /* OfferDataModel.swift */,
+			);
+			path = Offers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -627,11 +671,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				49D221B429435987006B3730 /* PointLabelView.swift in Sources */,
+				499CCBC529597E7E00D8B782 /* OfferViewModel.swift in Sources */,
 				4976F4F52939E7520061C781 /* PointViewModel.swift in Sources */,
 				4976F4DE2938D2390061C781 /* LaunchScreenWithAnim.swift in Sources */,
 				49D221B629435A40006B3730 /* CustomPointViewRow.swift in Sources */,
 				493BF2882950860800E8A280 /* SectionView.swift in Sources */,
 				499CCBC02959791000D8B782 /* UserNotActivedScreen.swift in Sources */,
+				499CCBCC295981EE00D8B782 /* OfferView.swift in Sources */,
 				499CCBB929557E9E00D8B782 /* IconLabel.swift in Sources */,
 				4976F523293DD22F0061C781 /* CustomDatePicker.swift in Sources */,
 				4976F4E52938E1150061C781 /* LargeButton.swift in Sources */,
@@ -653,6 +699,7 @@
 				4976F541293E2B1B0061C781 /* ExampleAlignmentGuide.swift in Sources */,
 				4976F53B293E1C290061C781 /* ChipsContent.swift in Sources */,
 				4976F520293DCF8D0061C781 /* View+HideKeyboard.swift in Sources */,
+				499CCBC829597F1900D8B782 /* OfferDataModel.swift in Sources */,
 				493BF28029505CD000E8A280 /* ProductDataModel.swift in Sources */,
 				4976F4F92939F35C0061C781 /* CardScreen.swift in Sources */,
 				4976F539293E1B3C0061C781 /* Chips.swift in Sources */,
@@ -664,12 +711,13 @@
 				4976F534293DF0160061C781 /* LabelView.swift in Sources */,
 				4976F4E82938EF5B0061C781 /* PointViewRow.swift in Sources */,
 				4976F50F293A30F80061C781 /* CustomToolBarContent.swift in Sources */,
-				4976F52C293DE4030061C781 /* TextSubTitle.swift in Sources */,
+				4976F52C293DE4030061C781 /* TextStyle.swift in Sources */,
 				4976F50B293A28910061C781 /* RouterViewModel.swift in Sources */,
 				499CCBAC295480B600D8B782 /* SectionColoredView.swift in Sources */,
 				4976F536293E181C0061C781 /* EditProfileScreen.swift in Sources */,
 				4976F4EE2939CDE10061C781 /* PointModel.swift in Sources */,
 				493BF28229505F7600E8A280 /* DetailHistoryView.swift in Sources */,
+				499CCBCE2959A37C00D8B782 /* OfferScreen.swift in Sources */,
 				4976F4C62938C8880061C781 /* Makaty_UIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

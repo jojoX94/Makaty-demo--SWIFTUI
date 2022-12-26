@@ -15,4 +15,12 @@ extension View {
     func textSubtitleStyle() -> some View {
         modifier(TextSubTtitle())
     }
+    
+    func textSubtitleStyle2() -> some View {
+        modifier(TextSubTtitle2())
+    }
+    
+    func textBody() -> some View {
+        modifier(TextBody())
+    }
 }

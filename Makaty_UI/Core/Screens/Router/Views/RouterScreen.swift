@@ -41,7 +41,7 @@ extension RouterScreen {
                 case .profile:
                     ProfileScreen()
                 case .offers:
-                    Text("Offers")
+                    OfferScreen()
                 case .products:
                     Text("Products")
                 case .tips:
