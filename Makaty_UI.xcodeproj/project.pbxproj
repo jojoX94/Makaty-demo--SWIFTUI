@@ -68,6 +68,11 @@
 		499CCBD22959C49F00D8B782 /* PointLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBD12959C49F00D8B782 /* PointLabel.swift */; };
 		499CCBD42959C71500D8B782 /* PaymentLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBD32959C71500D8B782 /* PaymentLabel.swift */; };
 		499CCBD72959CDA200D8B782 /* ProductViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBD62959CDA200D8B782 /* ProductViewRow.swift */; };
+		499CCBDC2959DBE100D8B782 /* TipsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBDB2959DBE100D8B782 /* TipsScreen.swift */; };
+		499CCBE02959DCA400D8B782 /* ArticleFilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBDF2959DCA400D8B782 /* ArticleFilterViewModel.swift */; };
+		499CCBE32959DE2A00D8B782 /* TipDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBE22959DE2A00D8B782 /* TipDataModel.swift */; };
+		499CCBE52959DE9000D8B782 /* TipViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBE42959DE9000D8B782 /* TipViewModel.swift */; };
+		499CCBE82959DFAA00D8B782 /* TipViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBE72959DFAA00D8B782 /* TipViewRow.swift */; };
 		49D221B429435987006B3730 /* PointLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D221B329435987006B3730 /* PointLabelView.swift */; };
 		49D221B629435A40006B3730 /* CustomPointViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D221B529435A40006B3730 /* CustomPointViewRow.swift */; };
 		49D221BB29435F92006B3730 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 49D221BA29435F92006B3730 /* FirebaseAuth */; };
@@ -139,6 +144,11 @@
 		499CCBD12959C49F00D8B782 /* PointLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointLabel.swift; sourceTree = "<group>"; };
 		499CCBD32959C71500D8B782 /* PaymentLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentLabel.swift; sourceTree = "<group>"; };
 		499CCBD62959CDA200D8B782 /* ProductViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewRow.swift; sourceTree = "<group>"; };
+		499CCBDB2959DBE100D8B782 /* TipsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipsScreen.swift; sourceTree = "<group>"; };
+		499CCBDF2959DCA400D8B782 /* ArticleFilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArticleFilterViewModel.swift; sourceTree = "<group>"; };
+		499CCBE22959DE2A00D8B782 /* TipDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipDataModel.swift; sourceTree = "<group>"; };
+		499CCBE42959DE9000D8B782 /* TipViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewModel.swift; sourceTree = "<group>"; };
+		499CCBE72959DFAA00D8B782 /* TipViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipViewRow.swift; sourceTree = "<group>"; };
 		49D221B329435987006B3730 /* PointLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointLabelView.swift; sourceTree = "<group>"; };
 		49D221B529435A40006B3730 /* CustomPointViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPointViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -235,6 +245,7 @@
 				4976F4F62939F33F0061C781 /* Card */,
 				4976F515293A39950061C781 /* Profile */,
 				499CCBC129597E1F00D8B782 /* Offers */,
+				499CCBD82959DBAB00D8B782 /* Tips */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -242,6 +253,7 @@
 		4976F4D62938CD980061C781 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				499CCBE62959DF8F00D8B782 /* Tips */,
 				499CCBD52959CD8200D8B782 /* Products */,
 				4976F4E62938EF460061C781 /* Points */,
 				499CCBBC29596B5000D8B782 /* ProblematicView */,
@@ -341,6 +353,7 @@
 		4976F4EB2939CDB20061C781 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				499CCBE12959DE1400D8B782 /* Tips */,
 				499CCBC629597EF200D8B782 /* Offers */,
 				4976F4EC2939CDC20061C781 /* Point */,
 				4976F53C293E1C8F0061C781 /* ChipsDataModel.swift */,
@@ -604,6 +617,48 @@
 			path = Products;
 			sourceTree = "<group>";
 		};
+		499CCBD82959DBAB00D8B782 /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				499CCBD92959DBBF00D8B782 /* ViewModels */,
+				499CCBDA2959DBC600D8B782 /* Views */,
+			);
+			path = Tips;
+			sourceTree = "<group>";
+		};
+		499CCBD92959DBBF00D8B782 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				499CCBDF2959DCA400D8B782 /* ArticleFilterViewModel.swift */,
+				499CCBE42959DE9000D8B782 /* TipViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		499CCBDA2959DBC600D8B782 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				499CCBDB2959DBE100D8B782 /* TipsScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		499CCBE12959DE1400D8B782 /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				499CCBE22959DE2A00D8B782 /* TipDataModel.swift */,
+			);
+			path = Tips;
+			sourceTree = "<group>";
+		};
+		499CCBE62959DF8F00D8B782 /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				499CCBE72959DFAA00D8B782 /* TipViewRow.swift */,
+			);
+			path = Tips;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -711,6 +766,7 @@
 				4976F507293A14A50061C781 /* LinkLabel.swift in Sources */,
 				4976F4F32939D7C80061C781 /* PointFilterViewModel.swift in Sources */,
 				493BF2852950604100E8A280 /* TopNavigationBar.swift in Sources */,
+				499CCBE32959DE2A00D8B782 /* TipDataModel.swift in Sources */,
 				499CCBBE29596B6E00D8B782 /* ProblematicView.swift in Sources */,
 				4976F51E293DC33E0061C781 /* TextFormField.swift in Sources */,
 				4976F5012939FE430061C781 /* SideMenuScreen.swift in Sources */,
@@ -719,6 +775,7 @@
 				4976F509293A163A0061C781 /* SideMenuViewModel.swift in Sources */,
 				499CCBD22959C49F00D8B782 /* PointLabel.swift in Sources */,
 				4976F541293E2B1B0061C781 /* ExampleAlignmentGuide.swift in Sources */,
+				499CCBE02959DCA400D8B782 /* ArticleFilterViewModel.swift in Sources */,
 				4976F53B293E1C290061C781 /* ChipsContent.swift in Sources */,
 				4976F520293DCF8D0061C781 /* View+HideKeyboard.swift in Sources */,
 				499CCBD02959C39D00D8B782 /* ProductsScreen.swift in Sources */,
@@ -731,14 +788,17 @@
 				4976F4E22938DE970061C781 /* PointScreen.swift in Sources */,
 				499CCBD72959CDA200D8B782 /* ProductViewRow.swift in Sources */,
 				499CCBB729557D5700D8B782 /* OutlinedLabel.swift in Sources */,
+				499CCBE52959DE9000D8B782 /* TipViewModel.swift in Sources */,
 				4976F53D293E1C8F0061C781 /* ChipsDataModel.swift in Sources */,
 				4976F534293DF0160061C781 /* LabelView.swift in Sources */,
 				4976F4E82938EF5B0061C781 /* PointViewRow.swift in Sources */,
 				4976F50F293A30F80061C781 /* CustomToolBarContent.swift in Sources */,
+				499CCBDC2959DBE100D8B782 /* TipsScreen.swift in Sources */,
 				4976F52C293DE4030061C781 /* TextStyle.swift in Sources */,
 				4976F50B293A28910061C781 /* RouterViewModel.swift in Sources */,
 				499CCBAC295480B600D8B782 /* SectionColoredView.swift in Sources */,
 				4976F536293E181C0061C781 /* EditProfileScreen.swift in Sources */,
+				499CCBE82959DFAA00D8B782 /* TipViewRow.swift in Sources */,
 				4976F4EE2939CDE10061C781 /* PointModel.swift in Sources */,
 				493BF28229505F7600E8A280 /* DetailHistoryView.swift in Sources */,
 				499CCBCE2959A37C00D8B782 /* OfferScreen.swift in Sources */,

@@ -1,42 +1,40 @@
 //
-//  HistoryScreen.swift
+//  TipsScreen.swift
 //  Makaty_UI
 //
-//  Created by Madiapps on 02/12/2022.
+//  Created by Madiapps on 26/12/2022.
 //
 
 import SwiftUI
 
-struct HistoryScreen: View {
+struct TipsScreen: View {
     
-    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
+    @StateObject var tipViewModel = TipViewModel()
     
-    @State var selectedFilter: PointFilterViewModel = .all
-    @EnvironmentObject var pointViewModel : PointViewModel
-    
-    var filteredPointOrder: [PointModel] {
+    @State var selectedFilter: TipFilterViewModel = .all
+    @Namespace private var namespace
+    var filteredTips: [TipDataModel] {
         switch selectedFilter {
             case .all:
-                    return pointViewModel.pointOders
-            case .win:
-                    return pointViewModel.pointOders.filter { $0.type == .win }
-            case .consume:
-                return pointViewModel.pointOders.filter { $0.type == .consume }
-            }
+                    return tipViewModel.tipList
+            case .iPad:
+                return tipViewModel.tipList.filter { $0.category == .iPad }
+            case .iPhone:
+                return tipViewModel.tipList.filter { $0.category == .iPhone }
+            case .Mac:
+                return tipViewModel.tipList.filter { $0.category == .Mac }
+            case .Watch:
+                return tipViewModel.tipList.filter { $0.category == .Watch }
+        }
     }
     
-    @Namespace private var namespace
+    @EnvironmentObject var viewRouter : ViewRoutterViewModel
     
     var body: some View {
-        VStack(alignment: .leading, spacing: 20) {
-            
-            TopNavigationBar(screenTitle: "Historique des points") {
-                presentationMode.wrappedValue.dismiss()
-            }
-            
-            VStack(alignment: .leading, spacing: 16) {
+        NavigationStack {
+            VStack(spacing: 16) {
                 HStack(spacing: 10) {
-                    ForEach(PointFilterViewModel.allCases, id: \.rawValue) { item in
+                    ForEach(TipFilterViewModel.allCases, id: \.rawValue) { item in
                         Text(item.title)
                             .font(.custom("SFProText-Regular", size: 14))
                             .foregroundColor(selectedFilter == item ? .white : Color("Gray"))
@@ -65,31 +63,33 @@ struct HistoryScreen: View {
                 }
                 
                 ScrollView(showsIndicators: false) {
-                    LazyVStack(spacing: 8) {
-                        ForEach(filteredPointOrder ) { item in
-                            NavigationLink(destination: {
-                                DetailHistoryView()
-                            }, label: {
-                                CustomPointViewRow(model: PointModel(title: "Ticket N°00123", type: item.type, totalPoints: item.totalPoints, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
-                            })
+                    LazyVStack(spacing: 16) {
+                        ForEach(filteredTips) { tipModel in
+                            TipViewRow(model: tipModel)
                         }
                     }
                 }
+                .padding(.horizontal)
                 .refreshable {
                     
                 }
             }
-            
-
+            .padding(.vertical, 21)
+            .background(Color.white)
+            .toolbar {
+                CustomToolBarContent(titleType: .text, title: "Nos conseils de Pro") {
+                    withAnimation {
+                        viewRouter.showMenu = true
+                    }
+                }
+            }
         }
-        .padding(.horizontal)
-        .navigationBarBackButtonHidden(true)
     }
 }
 
-struct HistoryScreen_Previews: PreviewProvider {
+struct TipsScreen_Previews: PreviewProvider {
     static var previews: some View {
-        HistoryScreen()
-            .environmentObject(PointViewModel())
+        TipsScreen()
+            .environmentObject(ViewRoutterViewModel())
     }
 }

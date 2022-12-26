@@ -45,7 +45,7 @@ extension RouterScreen {
                 case .products:
                     Text("Products")
                 case .tips:
-                    Text("Tips")
+                    TipsScreen()
             }
         }
         
