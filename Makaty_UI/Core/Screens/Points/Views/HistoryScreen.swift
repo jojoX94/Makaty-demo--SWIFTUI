@@ -75,6 +75,9 @@ struct HistoryScreen: View {
                         }
                     }
                 }
+                .refreshable {
+                    
+                }
             }
             
 

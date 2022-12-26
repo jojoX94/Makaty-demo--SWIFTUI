@@ -14,23 +14,28 @@ struct OfferScreen: View {
     
     var body: some View {
         NavigationStack {
-            VStack {
-                LazyVStack {
-                    ForEach(offerVM.offers) { offer in
-                        OfferView(model: offer)
+            ScrollView(showsIndicators: false) {
+                VStack {
+                    LazyVStack {
+                        ForEach(offerVM.offers) { offer in
+                            OfferView(model: offer)
+                        }
+                    }
+                    Spacer()
+                    
+                }
+                .padding(.top, 29)
+                .padding(.horizontal, 16)
+                .toolbar {
+                    CustomToolBarContent(titleType: .text, title: "Nos offres") {
+                        withAnimation {
+                            viewRouter.showMenu = true
+                        }
                     }
                 }
-                Spacer()
-                
             }
-            .padding(.top, 29)
-            .padding(.horizontal, 16)
-            .toolbar {
-                CustomToolBarContent(titleType: .text, title: "Nos offres") {
-                    withAnimation {
-                        viewRouter.showMenu = true
-                    }
-                }
+            .refreshable {
+                
             }
         }
     }

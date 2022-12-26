@@ -78,6 +78,9 @@ struct ProfileScreen: View {
                       self.hideKeyboard()
                 }
             }
+            .refreshable {
+                
+            }
             
         }
     }

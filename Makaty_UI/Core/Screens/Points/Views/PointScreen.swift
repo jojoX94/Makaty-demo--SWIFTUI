@@ -14,7 +14,7 @@ struct PointScreen: View {
     
     var body: some View {
         NavigationStack {
-            ScrollView {
+            ScrollView(showsIndicators: false) {
                 VStack(spacing: 24) {
                     VStack(spacing: 0) {
                         Text("Mes points de fidélité")
@@ -46,7 +46,6 @@ struct PointScreen: View {
                                 })
                             }
                         }
-                        
                             
                         NavigationLink {
                             HistoryScreen()
@@ -79,6 +78,9 @@ struct PointScreen: View {
                         }
                     }
                 }
+            }
+            .refreshable {
+                
             }
         }
     }
