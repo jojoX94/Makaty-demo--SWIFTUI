@@ -59,6 +59,7 @@
 		499CCBB929557E9E00D8B782 /* IconLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBB829557E9E00D8B782 /* IconLabel.swift */; };
 		499CCBBB2955D02E00D8B782 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBBA2955D02E00D8B782 /* Color+Extensions.swift */; };
 		499CCBBE29596B6E00D8B782 /* ProblematicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBBD29596B6E00D8B782 /* ProblematicView.swift */; };
+		499CCBC02959791000D8B782 /* UserNotActivedScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBBF2959790F00D8B782 /* UserNotActivedScreen.swift */; };
 		49D221B429435987006B3730 /* PointLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D221B329435987006B3730 /* PointLabelView.swift */; };
 		49D221B629435A40006B3730 /* CustomPointViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D221B529435A40006B3730 /* CustomPointViewRow.swift */; };
 		49D221BB29435F92006B3730 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 49D221BA29435F92006B3730 /* FirebaseAuth */; };
@@ -121,6 +122,7 @@
 		499CCBB829557E9E00D8B782 /* IconLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconLabel.swift; sourceTree = "<group>"; };
 		499CCBBA2955D02E00D8B782 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		499CCBBD29596B6E00D8B782 /* ProblematicView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblematicView.swift; sourceTree = "<group>"; };
+		499CCBBF2959790F00D8B782 /* UserNotActivedScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNotActivedScreen.swift; sourceTree = "<group>"; };
 		49D221B329435987006B3730 /* PointLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointLabelView.swift; sourceTree = "<group>"; };
 		49D221B529435A40006B3730 /* CustomPointViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPointViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -445,6 +447,7 @@
 			children = (
 				4976F51A293A3A2F0061C781 /* ProfileScreen.swift */,
 				4976F535293E181C0061C781 /* EditProfileScreen.swift */,
+				499CCBBF2959790F00D8B782 /* UserNotActivedScreen.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -628,6 +631,7 @@
 				4976F4DE2938D2390061C781 /* LaunchScreenWithAnim.swift in Sources */,
 				49D221B629435A40006B3730 /* CustomPointViewRow.swift in Sources */,
 				493BF2882950860800E8A280 /* SectionView.swift in Sources */,
+				499CCBC02959791000D8B782 /* UserNotActivedScreen.swift in Sources */,
 				499CCBB929557E9E00D8B782 /* IconLabel.swift in Sources */,
 				4976F523293DD22F0061C781 /* CustomDatePicker.swift in Sources */,
 				4976F4E52938E1150061C781 /* LargeButton.swift in Sources */,
