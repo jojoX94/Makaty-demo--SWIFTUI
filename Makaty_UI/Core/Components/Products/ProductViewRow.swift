@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct ProductViewRow: View {
     let model: ProductDataModel
@@ -13,7 +14,11 @@ struct ProductViewRow: View {
     var body: some View {
         VStack(spacing: 24) {
             VStack(spacing: 16) {
-                Image("ProductImg")
+                KFImage.url(URL(string: model.imageUrl))
+                    .placeholder{Image("ProductImg")}
+                    .loadDiskFileSynchronously()
+                    .cacheMemoryOnly()
+                    .fade(duration: 0.25)
                     .resizable()
                     .renderingMode(.original)
                     .aspectRatio(contentMode: .fit)

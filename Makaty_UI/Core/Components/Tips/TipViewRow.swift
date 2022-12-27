@@ -6,28 +6,27 @@
 //
 
 import SwiftUI
+import Kingfisher
 
 struct TipViewRow: View {
     let model: TipDataModel
     
     var body: some View {
         HStack(alignment: .top, spacing: 0) {
-            Image("AstuceImg")
+            KFImage.url(URL(string: model.imageUrl))
+                .placeholder{Image("AstuceImg")}
+                .loadDiskFileSynchronously()
+                .cacheMemoryOnly()
+                .fade(duration: 0.25)
                 .resizable()
                 .renderingMode(.original)
                 .aspectRatio(contentMode: .fit)
-                .frame(maxHeight: 116)
+                .frame(maxWidth: 150, maxHeight: 116)
             VStack(alignment: .leading, spacing: 10) {
                 Text(model.title)
                     .textSubtitleStyle2()
                     .foregroundColor(Color("Black"))
-                Label {
-                    Text(model.category.title)
-                        .font(.custom("SFProText-Regular", size: 14))
-                        .foregroundColor(Color("Gray"))
-                } icon: {
-                    Image("ShopIcon")
-                }
+                LabelWithIcon(label: model.category.title, iconName: "ShopIcon")
             }
             .padding(.top, 8)
             .padding(.horizontal, 16)

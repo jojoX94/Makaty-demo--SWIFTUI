@@ -65,7 +65,12 @@ struct TipsScreen: View {
                 ScrollView(showsIndicators: false) {
                     LazyVStack(spacing: 16) {
                         ForEach(filteredTips) { tipModel in
-                            TipViewRow(model: tipModel)
+                            NavigationLink {
+                                TipScreen(model: tipModel)
+                            } label: {
+                                TipViewRow(model: tipModel)
+                            }
+
                         }
                     }
                 }
