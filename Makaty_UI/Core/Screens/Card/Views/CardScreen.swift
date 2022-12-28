@@ -39,7 +39,12 @@ struct CardScreen: View {
                 NavigationLink {
                     PointScreen()
                 } label: {
-                    LargeButton(title: "Voir", subTitle: "mes points", backgroundImageName: "PointsImg_clean")
+                    NavigationLink {
+                        PointScreen()
+                    } label: {
+                        LargeButton(title: "Voir", subTitle: "mes points", backgroundImageName: "PointsImg_clean")
+                    }
+
                 }
 
 

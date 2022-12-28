@@ -27,7 +27,7 @@ struct CustomPointViewRow: View {
             Spacer()
             
             VStack {
-                Text("Points")
+                Text("POINTS")
                     .font(.custom("SFProText-Bold", size: 12))
                 Text( model.type == .win ? "+\(model.totalPoints)" : "-\(model.totalPoints)")
                     .textSubtitleStyle()

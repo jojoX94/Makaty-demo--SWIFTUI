@@ -37,6 +37,8 @@ struct CustomToolBarContent: ToolbarContent {
         ToolbarItem(placement: .navigationBarTrailing) {
             HStack {
                 Image("MenuIcon")
+                    .padding()
+                    .zIndex(999)
                     .onTapGesture {
                         withAnimation {
                             action()

@@ -66,7 +66,12 @@ struct PointScreen: View {
                     
                     VStack(spacing: 10) {
                         LargeButton(title: "Voir le catalogue", subTitle: "produits", backgroundImageName: "CatalogueImg_clean")
-                        LargeButton(title: "Voir les offres", subTitle: "MAKATY", backgroundImageName: "OffersImg_clean")
+                        NavigationLink {
+                            OfferScreen()
+                        } label: {
+                            LargeButton(title: "Voir les offres", subTitle: "MAKATY", backgroundImageName: "OffersImg_clean")
+                        }
+
                     }
                 }
                 .navigationBarBackButtonHidden(true)
