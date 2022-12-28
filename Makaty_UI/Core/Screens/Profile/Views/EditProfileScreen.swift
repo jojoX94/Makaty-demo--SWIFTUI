@@ -104,6 +104,9 @@ struct EditProfileScreen: View {
         }
         .padding(.horizontal, 16)
         .navigationBarBackButtonHidden()
+        .onTapGesture {
+            UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
+        }
             
     }
 }

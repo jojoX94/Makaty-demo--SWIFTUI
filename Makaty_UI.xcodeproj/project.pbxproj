@@ -12,6 +12,7 @@
 		493BF2852950604100E8A280 /* TopNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493BF2842950604100E8A280 /* TopNavigationBar.swift */; };
 		493BF2882950860800E8A280 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493BF2872950860800E8A280 /* SectionView.swift */; };
 		493BF28A29508A4E00E8A280 /* HLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493BF28929508A4E00E8A280 /* HLabel.swift */; };
+		49468505295C898100A53532 /* PurshasedProductDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49468504295C898100A53532 /* PurshasedProductDataModel.swift */; };
 		4976F4C62938C8880061C781 /* Makaty_UIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F4C52938C8880061C781 /* Makaty_UIApp.swift */; };
 		4976F4C82938C8880061C781 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F4C72938C8880061C781 /* ContentView.swift */; };
 		4976F4CA2938C88A0061C781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4976F4C92938C88A0061C781 /* Assets.xcassets */; };
@@ -91,6 +92,7 @@
 		493BF2842950604100E8A280 /* TopNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopNavigationBar.swift; sourceTree = "<group>"; };
 		493BF2872950860800E8A280 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		493BF28929508A4E00E8A280 /* HLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLabel.swift; sourceTree = "<group>"; };
+		49468504295C898100A53532 /* PurshasedProductDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurshasedProductDataModel.swift; sourceTree = "<group>"; };
 		4976F4C22938C8880061C781 /* Makaty_UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makaty_UI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4976F4C52938C8880061C781 /* Makaty_UIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Makaty_UIApp.swift; sourceTree = "<group>"; };
 		4976F4C72938C8880061C781 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -378,6 +380,7 @@
 			isa = PBXGroup;
 			children = (
 				4976F4ED2939CDE10061C781 /* PointModel.swift */,
+				49468504295C898100A53532 /* PurshasedProductDataModel.swift */,
 			);
 			path = Point;
 			sourceTree = "<group>";
@@ -798,6 +801,7 @@
 				4976F53B293E1C290061C781 /* ChipsContent.swift in Sources */,
 				4976F520293DCF8D0061C781 /* View+HideKeyboard.swift in Sources */,
 				499CCBD02959C39D00D8B782 /* ProductsScreen.swift in Sources */,
+				49468505295C898100A53532 /* PurshasedProductDataModel.swift in Sources */,
 				499CCBC829597F1900D8B782 /* OfferDataModel.swift in Sources */,
 				493BF28029505CD000E8A280 /* ProductDataModel.swift in Sources */,
 				4976F4F92939F35C0061C781 /* CardScreen.swift in Sources */,
