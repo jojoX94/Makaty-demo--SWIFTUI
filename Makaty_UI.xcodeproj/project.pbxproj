@@ -82,6 +82,11 @@
 		499CCBF0295AD30800D8B782 /* StringProtocol+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBEF295AD30800D8B782 /* StringProtocol+Extensions.swift */; };
 		499CCBF2295AD32D00D8B782 /* Text+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBF1295AD32D00D8B782 /* Text+Extensions.swift */; };
 		499CCBF5295B095D00D8B782 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 499CCBF4295B095D00D8B782 /* Kingfisher */; };
+		49C7F8D42964420E000EF6FE /* NotificationAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7F8D32964420E000EF6FE /* NotificationAlert.swift */; };
+		49C7F8D929644967000EF6FE /* ActivateNotifScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7F8D829644967000EF6FE /* ActivateNotifScreen.swift */; };
+		49C7F8DB29644EC0000EF6FE /* FixedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7F8DA29644EC0000EF6FE /* FixedButton.swift */; };
+		49C7F8DE2964563A000EF6FE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7F8DD2964563A000EF6FE /* Utils.swift */; };
+		49C7F8E029645658000EF6FE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7F8DF29645658000EF6FE /* Constants.swift */; };
 		49D221B429435987006B3730 /* PointLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D221B329435987006B3730 /* PointLabelView.swift */; };
 		49D221B629435A40006B3730 /* CustomPointViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D221B529435A40006B3730 /* CustomPointViewRow.swift */; };
 		49D221BB29435F92006B3730 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 49D221BA29435F92006B3730 /* FirebaseAuth */; };
@@ -166,6 +171,11 @@
 		499CCBED295AD14400D8B782 /* LabelWithIcon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelWithIcon.swift; sourceTree = "<group>"; };
 		499CCBEF295AD30800D8B782 /* StringProtocol+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringProtocol+Extensions.swift"; sourceTree = "<group>"; };
 		499CCBF1295AD32D00D8B782 /* Text+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Extensions.swift"; sourceTree = "<group>"; };
+		49C7F8D32964420E000EF6FE /* NotificationAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAlert.swift; sourceTree = "<group>"; };
+		49C7F8D829644967000EF6FE /* ActivateNotifScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateNotifScreen.swift; sourceTree = "<group>"; };
+		49C7F8DA29644EC0000EF6FE /* FixedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedButton.swift; sourceTree = "<group>"; };
+		49C7F8DD2964563A000EF6FE /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		49C7F8DF29645658000EF6FE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		49D221B329435987006B3730 /* PointLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointLabelView.swift; sourceTree = "<group>"; };
 		49D221B529435A40006B3730 /* CustomPointViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPointViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -215,6 +225,7 @@
 			isa = PBXGroup;
 			children = (
 				4946850A295D5E6C00A53532 /* NetworkAlert.swift */,
+				49C7F8D32964420E000EF6FE /* NotificationAlert.swift */,
 			);
 			path = Alert;
 			sourceTree = "<group>";
@@ -273,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				4976F4DA2938CF080061C781 /* SplashScreen */,
+				49C7F8D5296448E2000EF6FE /* Alert */,
 				4976F4D72938CDB50061C781 /* Router */,
 				4976F4FF2939FE280061C781 /* SideBarMenu */,
 				4976F4DF2938DE250061C781 /* Points */,
@@ -373,6 +385,7 @@
 				499CCBB629557D5700D8B782 /* OutlinedLabel.swift */,
 				499CCBB829557E9E00D8B782 /* IconLabel.swift */,
 				499CCBCB295981EE00D8B782 /* OfferView.swift */,
+				49C7F8DA29644EC0000EF6FE /* FixedButton.swift */,
 			);
 			path = Buttons;
 			sourceTree = "<group>";
@@ -437,6 +450,7 @@
 		4976F4FA2939F4430061C781 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				49C7F8DC29645617000EF6FE /* Functions */,
 				49468506295D5DEF00A53532 /* Network */,
 				4976F4FB2939F4510061C781 /* Constant */,
 			);
@@ -446,6 +460,7 @@
 		4976F4FB2939F4510061C781 /* Constant */ = {
 			isa = PBXGroup;
 			children = (
+				49C7F8DF29645658000EF6FE /* Constants.swift */,
 			);
 			path = Constant;
 			sourceTree = "<group>";
@@ -701,6 +716,38 @@
 			path = Tips;
 			sourceTree = "<group>";
 		};
+		49C7F8D5296448E2000EF6FE /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				49C7F8D6296448F2000EF6FE /* ViewModels */,
+				49C7F8D729644928000EF6FE /* Views */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		49C7F8D6296448F2000EF6FE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		49C7F8D729644928000EF6FE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49C7F8D829644967000EF6FE /* ActivateNotifScreen.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		49C7F8DC29645617000EF6FE /* Functions */ = {
+			isa = PBXGroup;
+			children = (
+				49C7F8DD2964563A000EF6FE /* Utils.swift */,
+			);
+			path = Functions;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -795,12 +842,14 @@
 				4976F4F52939E7520061C781 /* PointViewModel.swift in Sources */,
 				4976F4DE2938D2390061C781 /* LaunchScreenWithAnim.swift in Sources */,
 				49D221B629435A40006B3730 /* CustomPointViewRow.swift in Sources */,
+				49C7F8E029645658000EF6FE /* Constants.swift in Sources */,
 				493BF2882950860800E8A280 /* SectionView.swift in Sources */,
 				499CCBC02959791000D8B782 /* UserNotActivedScreen.swift in Sources */,
 				499CCBEE295AD14400D8B782 /* LabelWithIcon.swift in Sources */,
 				499CCBCC295981EE00D8B782 /* OfferView.swift in Sources */,
 				499CCBB929557E9E00D8B782 /* IconLabel.swift in Sources */,
 				4976F523293DD22F0061C781 /* CustomDatePicker.swift in Sources */,
+				49C7F8DB29644EC0000EF6FE /* FixedButton.swift in Sources */,
 				4976F4E52938E1150061C781 /* LargeButton.swift in Sources */,
 				499CCBBB2955D02E00D8B782 /* Color+Extensions.swift in Sources */,
 				493BF28A29508A4E00E8A280 /* HLabel.swift in Sources */,
@@ -814,6 +863,7 @@
 				4976F507293A14A50061C781 /* LinkLabel.swift in Sources */,
 				4976F4F32939D7C80061C781 /* PointFilterViewModel.swift in Sources */,
 				493BF2852950604100E8A280 /* TopNavigationBar.swift in Sources */,
+				49C7F8D929644967000EF6FE /* ActivateNotifScreen.swift in Sources */,
 				499CCBE32959DE2A00D8B782 /* TipDataModel.swift in Sources */,
 				499CCBBE29596B6E00D8B782 /* ProblematicView.swift in Sources */,
 				4976F51E293DC33E0061C781 /* TextFormField.swift in Sources */,
@@ -832,6 +882,7 @@
 				49468505295C898100A53532 /* PurshasedProductDataModel.swift in Sources */,
 				499CCBC829597F1900D8B782 /* OfferDataModel.swift in Sources */,
 				493BF28029505CD000E8A280 /* ProductDataModel.swift in Sources */,
+				49C7F8DE2964563A000EF6FE /* Utils.swift in Sources */,
 				4976F4F92939F35C0061C781 /* CardScreen.swift in Sources */,
 				4976F539293E1B3C0061C781 /* Chips.swift in Sources */,
 				4976F4EA2938F2410061C781 /* CustomLabel.swift in Sources */,
@@ -853,6 +904,7 @@
 				499CCBE82959DFAA00D8B782 /* TipViewRow.swift in Sources */,
 				4976F4EE2939CDE10061C781 /* PointModel.swift in Sources */,
 				493BF28229505F7600E8A280 /* DetailHistoryView.swift in Sources */,
+				49C7F8D42964420E000EF6FE /* NotificationAlert.swift in Sources */,
 				499CCBCE2959A37C00D8B782 /* OfferScreen.swift in Sources */,
 				4976F4C62938C8880061C781 /* Makaty_UIApp.swift in Sources */,
 			);
