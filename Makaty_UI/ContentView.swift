@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var networkMonitor = NetworkMonitor()
+    
     var body: some View {
         RouterScreen()
+            .alert("Erreur de connection", isPresented: $networkMonitor.isConnected.not) {
+                
+            }
     }
 }
 

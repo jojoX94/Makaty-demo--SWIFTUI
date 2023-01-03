@@ -13,6 +13,9 @@
 		493BF2882950860800E8A280 /* SectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493BF2872950860800E8A280 /* SectionView.swift */; };
 		493BF28A29508A4E00E8A280 /* HLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 493BF28929508A4E00E8A280 /* HLabel.swift */; };
 		49468505295C898100A53532 /* PurshasedProductDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49468504295C898100A53532 /* PurshasedProductDataModel.swift */; };
+		49468508295D5E0D00A53532 /* NetworkMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49468507295D5E0D00A53532 /* NetworkMonitor.swift */; };
+		4946850B295D5E6C00A53532 /* NetworkAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4946850A295D5E6C00A53532 /* NetworkAlert.swift */; };
+		4946850D295D6AA100A53532 /* Binding+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4946850C295D6AA100A53532 /* Binding+Extensions.swift */; };
 		4976F4C62938C8880061C781 /* Makaty_UIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F4C52938C8880061C781 /* Makaty_UIApp.swift */; };
 		4976F4C82938C8880061C781 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4976F4C72938C8880061C781 /* ContentView.swift */; };
 		4976F4CA2938C88A0061C781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4976F4C92938C88A0061C781 /* Assets.xcassets */; };
@@ -93,6 +96,9 @@
 		493BF2872950860800E8A280 /* SectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionView.swift; sourceTree = "<group>"; };
 		493BF28929508A4E00E8A280 /* HLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HLabel.swift; sourceTree = "<group>"; };
 		49468504295C898100A53532 /* PurshasedProductDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurshasedProductDataModel.swift; sourceTree = "<group>"; };
+		49468507295D5E0D00A53532 /* NetworkMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkMonitor.swift; sourceTree = "<group>"; };
+		4946850A295D5E6C00A53532 /* NetworkAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkAlert.swift; sourceTree = "<group>"; };
+		4946850C295D6AA100A53532 /* Binding+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Binding+Extensions.swift"; sourceTree = "<group>"; };
 		4976F4C22938C8880061C781 /* Makaty_UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Makaty_UI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4976F4C52938C8880061C781 /* Makaty_UIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Makaty_UIApp.swift; sourceTree = "<group>"; };
 		4976F4C72938C8880061C781 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -197,6 +203,22 @@
 			path = Sections;
 			sourceTree = "<group>";
 		};
+		49468506295D5DEF00A53532 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				49468507295D5E0D00A53532 /* NetworkMonitor.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		49468509295D5E5200A53532 /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				4946850A295D5E6C00A53532 /* NetworkAlert.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
 		4976F4B92938C8880061C781 = {
 			isa = PBXGroup;
 			children = (
@@ -265,6 +287,7 @@
 		4976F4D62938CD980061C781 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				49468509295D5E5200A53532 /* Alert */,
 				499CCBE62959DF8F00D8B782 /* Tips */,
 				499CCBD52959CD8200D8B782 /* Products */,
 				4976F4E62938EF460061C781 /* Points */,
@@ -301,6 +324,7 @@
 				499CCBBA2955D02E00D8B782 /* Color+Extensions.swift */,
 				499CCBEF295AD30800D8B782 /* StringProtocol+Extensions.swift */,
 				499CCBF1295AD32D00D8B782 /* Text+Extensions.swift */,
+				4946850C295D6AA100A53532 /* Binding+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -413,6 +437,7 @@
 		4976F4FA2939F4430061C781 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				49468506295D5DEF00A53532 /* Network */,
 				4976F4FB2939F4510061C781 /* Constant */,
 			);
 			path = Utils;
@@ -765,6 +790,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49D221B429435987006B3730 /* PointLabelView.swift in Sources */,
+				49468508295D5E0D00A53532 /* NetworkMonitor.swift in Sources */,
 				499CCBC529597E7E00D8B782 /* OfferViewModel.swift in Sources */,
 				4976F4F52939E7520061C781 /* PointViewModel.swift in Sources */,
 				4976F4DE2938D2390061C781 /* LaunchScreenWithAnim.swift in Sources */,
@@ -784,6 +810,7 @@
 				499CCBF0295AD30800D8B782 /* StringProtocol+Extensions.swift in Sources */,
 				4976F51B293A3A2F0061C781 /* ProfileScreen.swift in Sources */,
 				4976F4C82938C8880061C781 /* ContentView.swift in Sources */,
+				4946850D295D6AA100A53532 /* Binding+Extensions.swift in Sources */,
 				4976F507293A14A50061C781 /* LinkLabel.swift in Sources */,
 				4976F4F32939D7C80061C781 /* PointFilterViewModel.swift in Sources */,
 				493BF2852950604100E8A280 /* TopNavigationBar.swift in Sources */,
@@ -794,6 +821,7 @@
 				4976F52F293DE5600061C781 /* CustomSwitch.swift in Sources */,
 				4976F50D293A29290061C781 /* RouterScreen.swift in Sources */,
 				499CCBEA295AC8DC00D8B782 /* TipScreen.swift in Sources */,
+				4946850B295D5E6C00A53532 /* NetworkAlert.swift in Sources */,
 				4976F509293A163A0061C781 /* SideMenuViewModel.swift in Sources */,
 				499CCBD22959C49F00D8B782 /* PointLabel.swift in Sources */,
 				4976F541293E2B1B0061C781 /* ExampleAlignmentGuide.swift in Sources */,
