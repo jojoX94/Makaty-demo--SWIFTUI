@@ -87,6 +87,7 @@
 		49C7F8DB29644EC0000EF6FE /* FixedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7F8DA29644EC0000EF6FE /* FixedButton.swift */; };
 		49C7F8DE2964563A000EF6FE /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7F8DD2964563A000EF6FE /* Utils.swift */; };
 		49C7F8E029645658000EF6FE /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7F8DF29645658000EF6FE /* Constants.swift */; };
+		49C7F8E229646F10000EF6FE /* Shape+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7F8E129646F10000EF6FE /* Shape+Extensions.swift */; };
 		49D221B429435987006B3730 /* PointLabelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D221B329435987006B3730 /* PointLabelView.swift */; };
 		49D221B629435A40006B3730 /* CustomPointViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D221B529435A40006B3730 /* CustomPointViewRow.swift */; };
 		49D221BB29435F92006B3730 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 49D221BA29435F92006B3730 /* FirebaseAuth */; };
@@ -176,6 +177,7 @@
 		49C7F8DA29644EC0000EF6FE /* FixedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedButton.swift; sourceTree = "<group>"; };
 		49C7F8DD2964563A000EF6FE /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		49C7F8DF29645658000EF6FE /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		49C7F8E129646F10000EF6FE /* Shape+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Shape+Extensions.swift"; sourceTree = "<group>"; };
 		49D221B329435987006B3730 /* PointLabelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PointLabelView.swift; sourceTree = "<group>"; };
 		49D221B529435A40006B3730 /* CustomPointViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPointViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -337,6 +339,7 @@
 				499CCBEF295AD30800D8B782 /* StringProtocol+Extensions.swift */,
 				499CCBF1295AD32D00D8B782 /* Text+Extensions.swift */,
 				4946850C295D6AA100A53532 /* Binding+Extensions.swift */,
+				49C7F8E129646F10000EF6FE /* Shape+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -881,6 +884,7 @@
 				499CCBD02959C39D00D8B782 /* ProductsScreen.swift in Sources */,
 				49468505295C898100A53532 /* PurshasedProductDataModel.swift in Sources */,
 				499CCBC829597F1900D8B782 /* OfferDataModel.swift in Sources */,
+				49C7F8E229646F10000EF6FE /* Shape+Extensions.swift in Sources */,
 				493BF28029505CD000E8A280 /* ProductDataModel.swift in Sources */,
 				49C7F8DE2964563A000EF6FE /* Utils.swift in Sources */,
 				4976F4F92939F35C0061C781 /* CardScreen.swift in Sources */,

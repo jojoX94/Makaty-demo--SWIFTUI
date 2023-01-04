@@ -8,13 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isFirstLaunch = false
     @StateObject var networkMonitor = NetworkMonitor()
     
     var body: some View {
-        RouterScreen()
-            .alert("Erreur de connection", isPresented: $networkMonitor.isConnected.not) {
-                
+        Group {
+            if isFirstLaunch {
+                ActivateNotifScreen(isFirstLaunch: $isFirstLaunch)
+            } else {
+                RouterScreen()
+                    .alert("Erreur de connection", isPresented: $networkMonitor.isConnected.not) {
+                        
+                }
             }
+        }
+        .onAppear{
+            isFirstLaunch = !isAppAlreadyLaunchedOnce()
+        }
+        
     }
 }
 

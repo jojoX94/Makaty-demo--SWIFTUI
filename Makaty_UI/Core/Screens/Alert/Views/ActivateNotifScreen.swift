@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ActivateNotifScreen: View {
+    @Binding var isFirstLaunch: Bool
     
     var body: some View {
         NavigationStack {
@@ -27,17 +28,28 @@ struct ActivateNotifScreen: View {
                     
                 }
                 VStack(spacing: 16) {
-                    NavigationLink {
-                        PointScreen()
-                    } label: {
-                        FixedButton(style: .filled, label: "Activer les notifications")
+                    FixedButton(style: .filled, label: "Activer les notifications") {
+                        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { granted, error in
+                                if granted {
+                                    
+                                } else {
+                                    
+                                }
+                                withAnimation {
+                                    isFirstLaunch = false
+                                }
+                            }
+                        
+                        
                     }
 
-                    NavigationLink {
-                        PointScreen()
-                    } label: {
-                        FixedButton(style: .outlined, label: "Plus tard")
+
+                    FixedButton(style: .outlined, label: "Plus tard") {
+                        withAnimation {
+                            isFirstLaunch = false
+                        }
                     }
+                    
 
                 }
             }
@@ -48,6 +60,6 @@ struct ActivateNotifScreen: View {
 
 struct ActivateNotifScreen_Previews: PreviewProvider {
     static var previews: some View {
-        ActivateNotifScreen()
+        ActivateNotifScreen(isFirstLaunch: .constant(false))
     }
 }
