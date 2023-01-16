@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ProfileScreen: View {
     
-    @EnvironmentObject var viewRouter : ViewRoutterViewModel
+    @EnvironmentObject var viewRouter : RouterViewModel
     
     @State var receiveNotif: Bool = true
     
@@ -26,13 +26,13 @@ struct ProfileScreen: View {
 
                         VStack(spacing: 0) {
                             VStack(spacing: 0) {
-                                LabelView(label: "Nom", value: "$name")
-                                LabelView(label: "Prénom", value: "$username")
-                                LabelView(label: "Téléphone", value: "$username")
-                                LabelView(label: "Email", value: "$email")
-                                LabelView(label: "Adresse", value: "$address")
-                                LabelView(label: "Préférence de consommation", value: "$preference")
-                                LabelView(label: "Date d’adhésion", value: "11/12/2022")
+                                TextFieldDisabled(label: "Nom", value: "$name")
+                                TextFieldDisabled(label: "Prénom", value: "$username")
+                                TextFieldDisabled(label: "Téléphone", value: "$username")
+                                TextFieldDisabled(label: "Email", value: "$email")
+                                TextFieldDisabled(label: "Adresse", value: "$address")
+                                TextFieldDisabled(label: "Préférence de consommation", value: "$preference")
+                                TextFieldDisabled(label: "Date d’adhésion", value: "11/12/2022")
                             }
                             
                             VStack(spacing: 0) {
@@ -91,6 +91,6 @@ struct ProfileScreen: View {
 struct ProfileScreen_Previews: PreviewProvider {
     static var previews: some View {
         ProfileScreen()
-            .environmentObject(ViewRoutterViewModel())
+            .environmentObject(RouterViewModel())
     }
 }

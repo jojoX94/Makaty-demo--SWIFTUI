@@ -11,7 +11,7 @@ enum PointLabelType {
     case shop, time
 }
 
-struct PointLabelView: View {
+struct LabelWithIcon: View {
     let type: PointLabelType
     let text: String
     var body: some View {
@@ -25,11 +25,11 @@ struct PointLabelView: View {
     }
 }
 
-struct PointLabelView_Previews: PreviewProvider {
+struct LabelWithIcon_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            PointLabelView(type: .shop, text: "Feugiat ut tempor")
-            PointLabelView(type: .time, text: "Feugiat ut tempor")
+            LabelWithIcon(type: .shop, text: "Feugiat ut tempor")
+            LabelWithIcon(type: .time, text: "Feugiat ut tempor")
         }
         .previewLayout(.sizeThatFits)
         .padding()

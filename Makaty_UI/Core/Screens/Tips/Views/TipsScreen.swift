@@ -28,7 +28,7 @@ struct TipsScreen: View {
         }
     }
     
-    @EnvironmentObject var viewRouter : ViewRoutterViewModel
+    @EnvironmentObject var viewRouter : RouterViewModel
     
     var body: some View {
         NavigationStack {
@@ -95,6 +95,6 @@ struct TipsScreen: View {
 struct TipsScreen_Previews: PreviewProvider {
     static var previews: some View {
         TipsScreen()
-            .environmentObject(ViewRoutterViewModel())
+            .environmentObject(RouterViewModel())
     }
 }

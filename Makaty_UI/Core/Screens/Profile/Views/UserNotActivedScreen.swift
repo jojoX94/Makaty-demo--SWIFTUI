@@ -9,7 +9,7 @@ import SwiftUI
 
 struct UserNotActivedScreen: View {
     
-    @EnvironmentObject var viewRouter : ViewRoutterViewModel
+    @EnvironmentObject var viewRouter : RouterViewModel
     
     @State var receiveNotif: Bool = true
     
@@ -59,6 +59,6 @@ struct UserNotActivedScreen: View {
 struct UserNotActivedScreen_Previews: PreviewProvider {
     static var previews: some View {
         UserNotActivedScreen()
-            .environmentObject(ViewRoutterViewModel())
+            .environmentObject(RouterViewModel())
     }
 }

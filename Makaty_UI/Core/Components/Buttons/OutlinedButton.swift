@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OutlinedLabel: View {
+struct OutlinedButton: View {
     let label: String
     let iconName: String
     
@@ -28,9 +28,9 @@ struct OutlinedLabel: View {
     }
 }
 
-struct OutlinedLabel_Previews: PreviewProvider {
+struct OutlinedButton_Previews: PreviewProvider {
     static var previews: some View {
-        OutlinedLabel(label: "MAKATY", iconName: "ArrowRightIcon")
+        OutlinedButton(label: "MAKATY", iconName: "ArrowRightIcon")
             .padding()
             .previewLayout(.sizeThatFits)
     }

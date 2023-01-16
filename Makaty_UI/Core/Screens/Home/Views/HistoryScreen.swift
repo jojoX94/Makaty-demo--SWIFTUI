@@ -14,7 +14,7 @@ struct HistoryScreen: View {
     @State var selectedFilter: PointFilterViewModel = .all
     @EnvironmentObject var pointViewModel : PointViewModel
     
-    var filteredPointOrder: [PointModel] {
+    var filteredPointOrder: [OrderDataModel] {
         switch selectedFilter {
             case .all:
                     return pointViewModel.pointOders
@@ -70,7 +70,7 @@ struct HistoryScreen: View {
                             NavigationLink(destination: {
                                 DetailHistoryView()
                             }, label: {
-                                CustomPointViewRow(model: PointModel(title: "Ticket N°00123", type: item.type, totalPoints: item.totalPoints, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
+                                CustomPointViewRow(model: OrderDataModel(title: "Ticket N°00123", type: item.type, totalPoints: item.totalPoints, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
                             })
                         }
                     }

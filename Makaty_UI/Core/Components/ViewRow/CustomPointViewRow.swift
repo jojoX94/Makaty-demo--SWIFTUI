@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CustomPointViewRow: View {
     
-    let model: PointModel
+    let model: OrderDataModel
     
     var body: some View {
         HStack(alignment: .top) {
@@ -19,8 +19,8 @@ struct CustomPointViewRow: View {
                     .foregroundColor(Color("Black"))
                 
                 VStack(alignment: .leading, spacing: 8) {
-                    PointLabelView(type: .shop, text: "iPhone 13 pro max, iPad 9... ")
-                    PointLabelView(type: .time, text: "01/12/2022")
+                    LabelWithIcon(type: .shop, text: "iPhone 13 pro max, iPad 9... ")
+                    LabelWithIcon(type: .time, text: "01/12/2022")
                 }
             }
             
@@ -50,8 +50,8 @@ struct CustomPointViewRow: View {
 struct CustomPointViewRow_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            CustomPointViewRow(model: PointModel(id: "", title: "Ticket N°00123 ", type: .consume, totalPoints: 399, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
-            CustomPointViewRow(model: PointModel(id: "", title: "Ticket N°00123 ", type: .win, totalPoints: 399, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
+            CustomPointViewRow(model: OrderDataModel(id: "", title: "Ticket N°00123 ", type: .consume, totalPoints: 399, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
+            CustomPointViewRow(model: OrderDataModel(id: "", title: "Ticket N°00123 ", type: .win, totalPoints: 399, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
         }
         .previewLayout(.sizeThatFits)
         .padding()

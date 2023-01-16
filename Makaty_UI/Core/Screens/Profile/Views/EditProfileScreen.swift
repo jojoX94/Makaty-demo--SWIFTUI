@@ -21,11 +21,11 @@ struct EditProfileScreen: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
-    @State var listChips: [ChipsDataModel] = [
-        ChipsDataModel(isSelected: true, title: "iPhone"),
-        ChipsDataModel(isSelected: false, title: "iPad"),
-        ChipsDataModel(isSelected: true, title: "MacBook"),
-        ChipsDataModel(isSelected: false, title: "apple Watch"),
+    @State var listChips: [ChipDataModel] = [
+        ChipDataModel(isSelected: true, title: "iPhone"),
+        ChipDataModel(isSelected: false, title: "iPad"),
+        ChipDataModel(isSelected: true, title: "MacBook"),
+        ChipDataModel(isSelected: false, title: "apple Watch"),
     ]
     
     var body: some View {

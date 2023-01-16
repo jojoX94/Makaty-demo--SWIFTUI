@@ -11,15 +11,14 @@ struct ContentView: View {
     @State private var isFirstLaunch = false
     @StateObject var networkMonitor = NetworkMonitor()
     
+    
     var body: some View {
         Group {
             if isFirstLaunch {
                 ActivateNotifScreen(isFirstLaunch: $isFirstLaunch)
             } else {
                 RouterScreen()
-                    .alert("Erreur de connection", isPresented: $networkMonitor.isConnected.not) {
-                        
-                }
+                    .alert("Erreur de connection", isPresented: $networkMonitor.isConnected.not) {}
             }
         }
         .onAppear{

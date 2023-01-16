@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct OfferView: View {
+struct OfferViewRow: View {
     let model: OfferDataModel
     
     
@@ -55,11 +55,11 @@ struct OfferView: View {
     }
 }
 
-struct OfferView_Previews: PreviewProvider {
+struct OfferViewRow_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
-            OfferView(model: OfferDataModel(title: "Permanente", offerType: .unlimited, imageUrl: "PermanentOffers_clean"))
-            OfferView(model: OfferDataModel(title: "Permanente", offerType: .limited, imageUrl: "AnnivOffers_clean", beginDate: "01/12/2022", endDate: "01/12/2022"))
+            OfferViewRow(model: OfferDataModel(title: "Permanente", offerType: .unlimited, imageUrl: "PermanentOffers_clean"))
+            OfferViewRow(model: OfferDataModel(title: "Permanente", offerType: .limited, imageUrl: "AnnivOffers_clean", beginDate: "01/12/2022", endDate: "01/12/2022"))
         }
         .padding()
         .previewLayout(.sizeThatFits)

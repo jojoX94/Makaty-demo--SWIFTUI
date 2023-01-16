@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CardScreen: View {
     
-    @EnvironmentObject var viewRouter : ViewRoutterViewModel
+    @EnvironmentObject var viewRouter : RouterViewModel
     
     var body: some View {
         NavigationStack {
@@ -37,10 +37,10 @@ struct CardScreen: View {
                 .frame(maxWidth: .infinity)
                 
                 NavigationLink {
-                    PointScreen()
+                    HomeScreen()
                 } label: {
                     NavigationLink {
-                        PointScreen()
+                        HomeScreen()
                     } label: {
                         LargeButton(title: "Voir", subTitle: "mes points", backgroundImageName: "PointsImg_clean")
                     }
@@ -66,6 +66,6 @@ struct CardScreen: View {
 struct CardScreen_Previews: PreviewProvider {
     static var previews: some View {
         CardScreen()
-            .environmentObject(ViewRoutterViewModel())
+            .environmentObject(RouterViewModel())
     }
 }

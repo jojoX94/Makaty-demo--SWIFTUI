@@ -26,7 +26,7 @@ struct TipViewRow: View {
                 Text(model.title)
                     .textSubtitleStyle2()
                     .foregroundColor(Color("Black"))
-                LabelWithIcon(label: model.category.title, iconName: "ShopIcon")
+                LabelWithIcon(type: .shop, text: model.category.title)
             }
             .padding(.top, 8)
             .padding(.horizontal, 16)

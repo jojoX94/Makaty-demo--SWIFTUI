@@ -40,7 +40,7 @@ struct TipScreen: View {
                             Text(model.title)
                                 .textSubtitleStyle()
                                 .foregroundColor(Color("Blue"))
-                            LabelWithIcon(label: model.category.title, iconName: "ShopIcon")
+                            LabelWithIcon(type: .shop, text: model.category.title)
                             HStack {
                                 Spacer()
                             }

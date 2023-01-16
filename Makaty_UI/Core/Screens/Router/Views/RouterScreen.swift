@@ -9,7 +9,7 @@ import SwiftUI
 
 struct RouterScreen: View {
     
-    @StateObject var viewRouter = ViewRoutterViewModel()
+    @StateObject var viewRouter = RouterViewModel()
     
     var body: some View {
         ZStack {
@@ -35,7 +35,7 @@ extension RouterScreen {
         Group {
             switch viewRouter.currentPage {
                 case .point:
-                    PointScreen()
+                    HomeScreen()
                 case .card:
                     CardScreen()
                 case .profile:

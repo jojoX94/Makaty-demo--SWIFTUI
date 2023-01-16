@@ -9,7 +9,7 @@ import SwiftUI
 
 struct PointViewRow: View {
     
-    let model: PointModel
+    let model: OrderDataModel
     
     var body: some View {
         VStack(alignment: .leading) {
@@ -37,7 +37,7 @@ struct PointViewRow: View {
 
 struct PointViewRow_Previews: PreviewProvider {
     static var previews: some View {
-        PointViewRow(model: PointModel(id: "", title: "", type: .consume, totalPoints: 399, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
+        PointViewRow(model: OrderDataModel(id: "", title: "", type: .consume, totalPoints: 399, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
             .previewLayout(.sizeThatFits)
             .padding()
     }

@@ -1,5 +1,5 @@
 //
-//  PointModel.swift
+//  OrderDataModel.swift
 //  Makaty_UI
 //
 //  Created by Madiapps on 02/12/2022.
@@ -11,7 +11,7 @@ enum PointType {
     case win, consume
 }
 
-struct PointModel: Identifiable {
+struct OrderDataModel: Identifiable {
     let id: String
     let title: String
     let type: PointType

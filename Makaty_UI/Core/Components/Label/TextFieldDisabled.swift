@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LabelView: View {
+struct TextFieldDisabled: View {
     let label: String
     let value: String
     
@@ -30,9 +30,9 @@ struct LabelView: View {
     }
 }
 
-struct LabelView_Previews: PreviewProvider {
+struct TextFieldDisabled_Previews: PreviewProvider {
     static var previews: some View {
-        LabelView(label: "Nom", value: "Rakoto")
+        TextFieldDisabled(label: "Nom", value: "Rakoto")
             .previewLayout(.sizeThatFits)
             .padding()
     }

@@ -10,7 +10,7 @@ import SwiftUI
 struct SideMenuScreen: View {
     
     @State var selectedMenu: Page = .point
-    @EnvironmentObject var viewRouter: ViewRoutterViewModel
+    @EnvironmentObject var viewRouter: RouterViewModel
     
     @Namespace private var namespace
     
@@ -59,11 +59,11 @@ struct SideMenuScreen: View {
             
             HStack(spacing: 16) {
                 Link(destination: URL(string: "http://www.makaty.mg/")!) {
-                    OutlinedLabel(label: "MAKATY", iconName: "ArrowRightIcon")
+                    OutlinedButton(label: "MAKATY", iconName: "ArrowRightIcon")
                 }
                 
                 Link(destination: URL(string: "https://www.facebook.com/MakatyFB/")!) {
-                    IconLabel(iconName: "FacebookIcon")
+                    IconButton(iconName: "FacebookIcon")
                 }
             }
             
@@ -78,6 +78,6 @@ struct SideMenuScreen: View {
 struct SideMenu_Previews: PreviewProvider {
     static var previews: some View {
         SideMenuScreen()
-            .environmentObject(ViewRoutterViewModel())
+            .environmentObject(RouterViewModel())
     }
 }

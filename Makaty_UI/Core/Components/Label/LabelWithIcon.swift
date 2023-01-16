@@ -25,5 +25,6 @@ struct LabelWithIcon: View {
 struct LabelWithIcon_Previews: PreviewProvider {
     static var previews: some View {
         LabelWithIcon(label: "iPhone", iconName: "ShopIcon")
+            
     }
 }

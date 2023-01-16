@@ -1,5 +1,5 @@
 //
-//  IconLabel.swift
+//  IconButton.swift
 //  Makaty_UI
 //
 //  Created by Madiapps on 23/12/2022.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct IconLabel: View {
+struct IconButton: View {
     let iconName: String
     
     var body: some View {
@@ -18,9 +18,9 @@ struct IconLabel: View {
     }
 }
 
-struct IconLabel_Previews: PreviewProvider {
+struct IconButton_Previews: PreviewProvider {
     static var previews: some View {
-        IconLabel(iconName: "FacebookIcon")
+        IconButton(iconName: "FacebookIcon")
             .padding()
             .previewLayout(.sizeThatFits)
     }

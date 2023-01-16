@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ViewRoutterViewModel: ObservableObject {
+class RouterViewModel: ObservableObject {
     @Published var currentPage: Page = .point
     @Published var showMenu = false
 }

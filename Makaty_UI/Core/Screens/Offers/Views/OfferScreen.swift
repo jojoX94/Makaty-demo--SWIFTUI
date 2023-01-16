@@ -10,7 +10,7 @@ import SwiftUI
 struct OfferScreen: View {
     @StateObject var offerVM = OfferViewModel()
     
-    @EnvironmentObject var viewRouter : ViewRoutterViewModel
+    @EnvironmentObject var viewRouter : RouterViewModel
     
     var body: some View {
         NavigationStack {
@@ -21,7 +21,7 @@ struct OfferScreen: View {
                             NavigationLink {
                                 ProductsScreen()
                             } label: {
-                                OfferView(model: offer)
+                                OfferViewRow(model: offer)
                             }
 
                         }
@@ -49,6 +49,6 @@ struct OfferScreen: View {
 struct OfferScreen_Previews: PreviewProvider {
     static var previews: some View {
         OfferScreen()
-            .environmentObject(ViewRoutterViewModel())
+            .environmentObject(RouterViewModel())
     }
 }

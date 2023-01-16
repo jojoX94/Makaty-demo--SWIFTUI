@@ -1,5 +1,5 @@
 //
-//  PointScreen.swift
+//  HomeScreen.swift
 //  Makaty_UI
 //
 //  Created by Madiapps on 01/12/2022.
@@ -7,10 +7,10 @@
 
 import SwiftUI
 
-struct PointScreen: View {
+struct HomeScreen: View {
     
     @StateObject var pointViewModel = PointViewModel()
-    @EnvironmentObject var viewRouter : ViewRoutterViewModel
+    @EnvironmentObject var viewRouter : RouterViewModel
     
     var body: some View {
         NavigationStack {
@@ -42,7 +42,7 @@ struct PointScreen: View {
                                 NavigationLink(destination: {
                                     DetailHistoryView()
                                 }, label: {
-                                    CustomPointViewRow(model: PointModel(title: "Facture N°00123", type: .win, totalPoints: 399, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
+                                    CustomPointViewRow(model: OrderDataModel(title: "Facture N°00123", type: .win, totalPoints: 399, details: "", activeDate: "", expireDate: "", purchaseDate: ""))
                                 })
                             }
                         }
@@ -91,9 +91,9 @@ struct PointScreen: View {
     }
 }
 
-struct PointScreen_Previews: PreviewProvider {
+struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
-        PointScreen()
-            .environmentObject(ViewRoutterViewModel())
+        HomeScreen()
+            .environmentObject(RouterViewModel())
     }
 }
