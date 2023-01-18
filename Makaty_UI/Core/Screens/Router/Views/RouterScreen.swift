@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RouterScreen: View {
-    
+    @EnvironmentObject var authViewModel : AuthViewModel
     @StateObject var viewRouter = RouterViewModel()
     
     var body: some View {
@@ -27,6 +27,7 @@ struct RouterScreen: View {
 struct RouterScreen_Previews: PreviewProvider {
     static var previews: some View {
         RouterScreen()
+            .environmentObject(AuthViewModel())
     }
 }
 
@@ -36,10 +37,17 @@ extension RouterScreen {
             switch viewRouter.currentPage {
                 case .point:
                     HomeScreen()
+                        .environmentObject(authViewModel)
                 case .card:
                     CardScreen()
+                        .environmentObject(authViewModel)
                 case .profile:
-                    ProfileScreen()
+                    if authViewModel.isLoggedIn {
+                        ProfileScreen()
+                            .environmentObject(authViewModel)
+                    } else {
+                        UserNotActivedScreen()
+                    }
                 case .offers:
                     OfferScreen()
                 case .products:

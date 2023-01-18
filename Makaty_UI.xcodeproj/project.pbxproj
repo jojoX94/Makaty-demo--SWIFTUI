@@ -79,6 +79,15 @@
 		499CCBF0295AD30800D8B782 /* StringProtocol+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBEF295AD30800D8B782 /* StringProtocol+Extensions.swift */; };
 		499CCBF2295AD32D00D8B782 /* Text+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 499CCBF1295AD32D00D8B782 /* Text+Extensions.swift */; };
 		499CCBF5295B095D00D8B782 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 499CCBF4295B095D00D8B782 /* Kingfisher */; };
+		49AB67272977C049006B4695 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 49AB67262977C049006B4695 /* Alamofire */; };
+		49AB672B2977C09A006B4695 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AB672A2977C09A006B4695 /* AuthViewModel.swift */; };
+		49AB672D2977C481006B4695 /* UserDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AB672C2977C481006B4695 /* UserDataModel.swift */; };
+		49AB67322977C69F006B4695 /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AB67312977C69F006B4695 /* EndPoint.swift */; };
+		49AB67352977C6F1006B4695 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AB67342977C6F1006B4695 /* Service.swift */; };
+		49AB67382977C808006B4695 /* SignInRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AB67372977C808006B4695 /* SignInRes.swift */; };
+		49AB673A2977C8DE006B4695 /* NetworkErrorDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AB67392977C8DE006B4695 /* NetworkErrorDataModel.swift */; };
+		49AB673C2977C9AE006B4695 /* SignInBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AB673B2977C9AE006B4695 /* SignInBody.swift */; };
+		49AB673F2977D467006B4695 /* UserRes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49AB673E2977D467006B4695 /* UserRes.swift */; };
 		49C7F8D42964420E000EF6FE /* NotificationAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7F8D32964420E000EF6FE /* NotificationAlert.swift */; };
 		49C7F8D929644967000EF6FE /* ActivateNotifScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7F8D829644967000EF6FE /* ActivateNotifScreen.swift */; };
 		49C7F8DB29644EC0000EF6FE /* FixedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7F8DA29644EC0000EF6FE /* FixedButton.swift */; };
@@ -166,6 +175,14 @@
 		499CCBE9295AC8DC00D8B782 /* TipScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TipScreen.swift; sourceTree = "<group>"; };
 		499CCBEF295AD30800D8B782 /* StringProtocol+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StringProtocol+Extensions.swift"; sourceTree = "<group>"; };
 		499CCBF1295AD32D00D8B782 /* Text+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Extensions.swift"; sourceTree = "<group>"; };
+		49AB672A2977C09A006B4695 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		49AB672C2977C481006B4695 /* UserDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDataModel.swift; sourceTree = "<group>"; };
+		49AB67312977C69F006B4695 /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		49AB67342977C6F1006B4695 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		49AB67372977C808006B4695 /* SignInRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRes.swift; sourceTree = "<group>"; };
+		49AB67392977C8DE006B4695 /* NetworkErrorDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkErrorDataModel.swift; sourceTree = "<group>"; };
+		49AB673B2977C9AE006B4695 /* SignInBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInBody.swift; sourceTree = "<group>"; };
+		49AB673E2977D467006B4695 /* UserRes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRes.swift; sourceTree = "<group>"; };
 		49C7F8D32964420E000EF6FE /* NotificationAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAlert.swift; sourceTree = "<group>"; };
 		49C7F8D829644967000EF6FE /* ActivateNotifScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivateNotifScreen.swift; sourceTree = "<group>"; };
 		49C7F8DA29644EC0000EF6FE /* FixedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedButton.swift; sourceTree = "<group>"; };
@@ -181,6 +198,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49AB67272977C049006B4695 /* Alamofire in Frameworks */,
 				499CCBF5295B095D00D8B782 /* Kingfisher in Frameworks */,
 				49D221BF29435F92006B3730 /* FirebaseMessaging in Frameworks */,
 				49D221BB29435F92006B3730 /* FirebaseAuth in Frameworks */,
@@ -268,6 +286,7 @@
 		4976F4D32938CD420061C781 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				49AB672E2977C640006B4695 /* Service */,
 				4976F4EB2939CDB20061C781 /* Models */,
 				4976F52A293DE3D80061C781 /* Styles */,
 				4976F4D62938CD980061C781 /* Components */,
@@ -279,6 +298,7 @@
 		4976F4D52938CD8F0061C781 /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				49AB67282977C066006B4695 /* Authentification */,
 				4976F4DA2938CF080061C781 /* SplashScreen */,
 				49C7F8D5296448E2000EF6FE /* Alert */,
 				4976F4D72938CDB50061C781 /* Router */,
@@ -393,6 +413,8 @@
 				4976F4ED2939CDE10061C781 /* OrderDataModel.swift */,
 				4976F53C293E1C8F0061C781 /* ChipDataModel.swift */,
 				493BF27F29505CD000E8A280 /* ProductDataModel.swift */,
+				49AB672C2977C481006B4695 /* UserDataModel.swift */,
+				49AB67392977C8DE006B4695 /* NetworkErrorDataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -670,6 +692,58 @@
 			path = ViewRow;
 			sourceTree = "<group>";
 		};
+		49AB67282977C066006B4695 /* Authentification */ = {
+			isa = PBXGroup;
+			children = (
+				49AB67292977C071006B4695 /* ViewModels */,
+			);
+			path = Authentification;
+			sourceTree = "<group>";
+		};
+		49AB67292977C071006B4695 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				49AB672A2977C09A006B4695 /* AuthViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		49AB672E2977C640006B4695 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				49AB672F2977C669006B4695 /* Authentificaiton */,
+				49AB67312977C69F006B4695 /* EndPoint.swift */,
+				49AB67342977C6F1006B4695 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		49AB672F2977C669006B4695 /* Authentificaiton */ = {
+			isa = PBXGroup;
+			children = (
+				49AB673D2977D1D4006B4695 /* UserResponse */,
+				49AB67362977C7EE006B4695 /* SignIn */,
+			);
+			path = Authentificaiton;
+			sourceTree = "<group>";
+		};
+		49AB67362977C7EE006B4695 /* SignIn */ = {
+			isa = PBXGroup;
+			children = (
+				49AB67372977C808006B4695 /* SignInRes.swift */,
+				49AB673B2977C9AE006B4695 /* SignInBody.swift */,
+			);
+			path = SignIn;
+			sourceTree = "<group>";
+		};
+		49AB673D2977D1D4006B4695 /* UserResponse */ = {
+			isa = PBXGroup;
+			children = (
+				49AB673E2977D467006B4695 /* UserRes.swift */,
+			);
+			path = UserResponse;
+			sourceTree = "<group>";
+		};
 		49C7F8D5296448E2000EF6FE /* Alert */ = {
 			isa = PBXGroup;
 			children = (
@@ -723,6 +797,7 @@
 				49D221BC29435F92006B3730 /* FirebaseFirestore */,
 				49D221BE29435F92006B3730 /* FirebaseMessaging */,
 				499CCBF4295B095D00D8B782 /* Kingfisher */,
+				49AB67262977C049006B4695 /* Alamofire */,
 			);
 			productName = Makaty_UI;
 			productReference = 4976F4C22938C8880061C781 /* Makaty_UI.app */;
@@ -755,6 +830,7 @@
 			packageReferences = (
 				49D221B929435F92006B3730 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				499CCBF3295B095D00D8B782 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				49AB67252977C048006B4695 /* XCRemoteSwiftPackageReference "Alamofire" */,
 			);
 			productRefGroup = 4976F4C32938C8880061C781 /* Products */;
 			projectDirPath = "";
@@ -790,16 +866,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49AB672D2977C481006B4695 /* UserDataModel.swift in Sources */,
 				49D221B429435987006B3730 /* IconWithLabel.swift in Sources */,
 				49468508295D5E0D00A53532 /* NetworkMonitor.swift in Sources */,
 				499CCBC529597E7E00D8B782 /* OfferViewModel.swift in Sources */,
 				4976F4F52939E7520061C781 /* PointViewModel.swift in Sources */,
+				49AB67352977C6F1006B4695 /* Service.swift in Sources */,
 				4976F4DE2938D2390061C781 /* LaunchScreenWithAnim.swift in Sources */,
 				49D221B629435A40006B3730 /* CustomPointViewRow.swift in Sources */,
 				49C7F8E029645658000EF6FE /* Constants.swift in Sources */,
 				493BF2882950860800E8A280 /* SectionView.swift in Sources */,
 				499CCBC02959791000D8B782 /* UserNotActivedScreen.swift in Sources */,
 				499CCBCC295981EE00D8B782 /* OfferViewRow.swift in Sources */,
+				49AB672B2977C09A006B4695 /* AuthViewModel.swift in Sources */,
 				499CCBB929557E9E00D8B782 /* IconButton.swift in Sources */,
 				4976F523293DD22F0061C781 /* CustomDatePicker.swift in Sources */,
 				49C7F8DB29644EC0000EF6FE /* FixedButton.swift in Sources */,
@@ -819,6 +898,8 @@
 				49C7F8D929644967000EF6FE /* ActivateNotifScreen.swift in Sources */,
 				499CCBE32959DE2A00D8B782 /* TipDataModel.swift in Sources */,
 				499CCBBE29596B6E00D8B782 /* ProblematicView.swift in Sources */,
+				49AB673F2977D467006B4695 /* UserRes.swift in Sources */,
+				49AB67382977C808006B4695 /* SignInRes.swift in Sources */,
 				4976F51E293DC33E0061C781 /* TextFormField.swift in Sources */,
 				4976F5012939FE430061C781 /* SideMenuScreen.swift in Sources */,
 				4976F52F293DE5600061C781 /* CustomSwitch.swift in Sources */,
@@ -831,6 +912,7 @@
 				499CCBE02959DCA400D8B782 /* ArticleFilterViewModel.swift in Sources */,
 				4976F53B293E1C290061C781 /* ChipsContent.swift in Sources */,
 				4976F520293DCF8D0061C781 /* View+HideKeyboard.swift in Sources */,
+				49AB673C2977C9AE006B4695 /* SignInBody.swift in Sources */,
 				499CCBD02959C39D00D8B782 /* ProductsScreen.swift in Sources */,
 				49468505295C898100A53532 /* PurshasedProductDataModel.swift in Sources */,
 				499CCBC829597F1900D8B782 /* OfferDataModel.swift in Sources */,
@@ -842,6 +924,7 @@
 				4976F4F02939D4830061C781 /* HistoryScreen.swift in Sources */,
 				4976F4E22938DE970061C781 /* HomeScreen.swift in Sources */,
 				499CCBF2295AD32D00D8B782 /* Text+Extensions.swift in Sources */,
+				49AB673A2977C8DE006B4695 /* NetworkErrorDataModel.swift in Sources */,
 				499CCBD72959CDA200D8B782 /* ProductViewRow.swift in Sources */,
 				499CCBB729557D5700D8B782 /* OutlinedButton.swift in Sources */,
 				499CCBE52959DE9000D8B782 /* TipViewModel.swift in Sources */,
@@ -854,6 +937,7 @@
 				499CCBAC295480B600D8B782 /* SectionColoredView.swift in Sources */,
 				4976F536293E181C0061C781 /* EditProfileScreen.swift in Sources */,
 				499CCBE82959DFAA00D8B782 /* TipViewRow.swift in Sources */,
+				49AB67322977C69F006B4695 /* EndPoint.swift in Sources */,
 				4976F4EE2939CDE10061C781 /* OrderDataModel.swift in Sources */,
 				493BF28229505F7600E8A280 /* DetailHistoryView.swift in Sources */,
 				49C7F8D42964420E000EF6FE /* NotificationAlert.swift in Sources */,
@@ -1079,6 +1163,14 @@
 				kind = branch;
 			};
 		};
+		49AB67252977C048006B4695 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		49D221B929435F92006B3730 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -1094,6 +1186,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 499CCBF3295B095D00D8B782 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		49AB67262977C049006B4695 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 49AB67252977C048006B4695 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
 		};
 		49D221BA29435F92006B3730 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;

@@ -10,7 +10,10 @@ import SwiftUI
 struct HomeScreen: View {
     
     @StateObject var pointViewModel = PointViewModel()
+    
     @EnvironmentObject var viewRouter : RouterViewModel
+    @EnvironmentObject var authViewModel : AuthViewModel
+    
     
     var body: some View {
         NavigationStack {
@@ -95,5 +98,7 @@ struct HomeScreen_Previews: PreviewProvider {
     static var previews: some View {
         HomeScreen()
             .environmentObject(RouterViewModel())
+            .environmentObject(AuthViewModel())
+        
     }
 }

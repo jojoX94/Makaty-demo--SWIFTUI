@@ -10,6 +10,7 @@ import SwiftUI
 struct CardScreen: View {
     
     @EnvironmentObject var viewRouter : RouterViewModel
+    @EnvironmentObject var authViewModel : AuthViewModel
     
     var body: some View {
         NavigationStack {
@@ -67,5 +68,6 @@ struct CardScreen_Previews: PreviewProvider {
     static var previews: some View {
         CardScreen()
             .environmentObject(RouterViewModel())
+            .environmentObject(AuthViewModel())
     }
 }
